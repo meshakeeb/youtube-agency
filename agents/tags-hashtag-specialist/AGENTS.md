@@ -3,12 +3,13 @@ name: Tags and Hashtag Specialist
 title: Tags and Hashtag Specialist
 slug: tags-hashtag-specialist
 reportsTo: ../../agents/chief-strategy-officer/AGENTS.md
-description: Builds tag sets and hashtags for every video from the Keyword Brief and Description. Outputs 8–12 tags within the 500-character limit and 3–5 hashtags. Niche-specific, varied scope, never generic or spammy.
+description: >
+  Builds the tag set and hashtag selection for every video. Takes the Keyword
+  Brief and Description as inputs. Outputs 8–12 tags within the 500-character
+  limit and 3–5 hashtags. Tags must be niche-specific, varied in scope, and
+  never generic or spammy.
 skills:
   - youtube-tag-strategy
-  - youtube-keyword-research
-  - niche-mapping
-  - youtube-description-writing
 ---
 
 # Tags and Hashtag Specialist

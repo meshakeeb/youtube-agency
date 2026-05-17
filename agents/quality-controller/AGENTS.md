@@ -3,12 +3,14 @@ name: Quality Controller
 title: Quality Controller
 slug: quality-controller
 reportsTo: ../../agents/ceo/AGENTS.md
-description: Reviews every Production deliverable before client delivery. Checks keyword stuffing, brand voice, SEO structure, and missed optimizations. Approves or returns with notes—nothing ships without QC sign-off.
+description: >
+  Reviews every Production Team deliverable before it reaches a client. Checks
+  for keyword stuffing, brand voice violations, structural SEO errors, and
+  missed optimization opportunities. Approves packages for delivery or returns
+  them to Production with specific revision notes. Nothing ships without QC
+  sign-off.
 skills:
   - seo-quality-review
-  - brand-voice-extraction
-  - youtube-title-writing
-  - youtube-description-writing
 ---
 
 # Quality Controller

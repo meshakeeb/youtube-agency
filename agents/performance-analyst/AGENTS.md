@@ -3,12 +3,13 @@ name: Performance Analyst
 title: Performance Analyst
 slug: performance-analyst
 reportsTo: ../../agents/ceo/AGENTS.md
-description: Monitors YouTube analytics for all clients: CTR, AVD, view velocity, and subscriber growth weekly. Flags underperformers to the CSO and feeds data to Client Reporting for monthly reports.
+description: >
+  Monitors YouTube analytics across all active client channels. Tracks CTR,
+  AVD, view velocity, and subscriber growth weekly. Flags underperforming
+  videos and channels to the Chief Strategy Officer and feeds performance data
+  to the Client Reporting Agent for monthly reports.
 skills:
   - youtube-analytics-review
-  - client-reporting
-  - content-strategy
-  - seo-quality-review
 ---
 
 # Performance Analyst

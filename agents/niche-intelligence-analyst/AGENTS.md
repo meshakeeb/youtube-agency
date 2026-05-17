@@ -3,12 +3,13 @@ name: Niche Intelligence Analyst
 title: Niche Intelligence Analyst
 slug: niche-intelligence-analyst
 reportsTo: ../../agents/chief-strategy-officer/AGENTS.md
-description: Builds the Niche Intelligence Profile: top channels, content patterns, audience vocabulary, trending angles, and seasonal cycles. Mandatory foundation for all downstream production work.
+description: >
+  Builds the Niche Intelligence Profile for every client. Maps the niche
+  ecosystem including top channels, content patterns, audience vocabulary,
+  trending angles, and seasonal content cycles. This profile is the mandatory
+  foundation for all downstream production work.
 skills:
   - niche-mapping
-  - competitor-research
-  - youtube-analytics-review
-  - content-strategy
 ---
 
 # Niche Intelligence Analyst
