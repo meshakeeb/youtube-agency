@@ -3,11 +3,7 @@ name: Cross-Platform Repurposing Agent
 title: Cross-Platform Repurposing Agent
 slug: cross-platform-repurposing-agent
 reportsTo: ../../agents/chief-strategy-officer/AGENTS.md
-description: >
-  Turns every long-form YouTube video into platform-specific content for Shorts,
-  Twitter/X, LinkedIn, Instagram, and Telegram. Activates after every publish.
-  Ensures clients get maximum ROI from every piece of content they produce,
-  while driving external traffic back to the YouTube video.
+description: Repurposes every long-form YouTube video into Shorts, X, LinkedIn, Instagram, and Telegram content after publish. Maximizes ROI and drives external traffic back to YouTube.
 skills:
   - content-repurposing
   - brand-voice-extraction

@@ -3,12 +3,7 @@ name: Chief Strategy Officer
 title: Chief Strategy Officer
 slug: chief-strategy-officer
 reportsTo: ../../agents/ceo/AGENTS.md
-description: >
-  Manages Intelligence, Onboarding, Production, and Growth teams. Owns the
-  end-to-end client content strategy from niche profiling through to published
-  video performance. The CSO is the connective tissue between all creative and
-  research teams, ensuring work flows correctly and every client's strategy is
-  coherent.
+description: Manages Intelligence, Onboarding, Production, and Growth teams. Owns end-to-end client content strategy from niche profiling through published performance. Ensures coherent work flow across creative and research teams.
 skills:
   - content-strategy
   - niche-mapping

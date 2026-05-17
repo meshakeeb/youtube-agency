@@ -3,11 +3,7 @@ name: Chapter Architect
 title: Chapter Architect
 slug: chapter-architect
 reportsTo: ../../agents/chief-strategy-officer/AGENTS.md
-description: >
-  Structures video chapters and timestamps for every video. Uses the video
-  summary or script outline and the Keyword Brief as inputs. Chapters must
-  start at 0:00, include a minimum of 3 segments, use keyword-rich titles,
-  and be formatted correctly to enable Google search snippet appearance.
+description: Structures video chapters and timestamps using the video summary and Keyword Brief. Chapters start at 0:00, include 3+ segments, use keyword-rich titles, and enable Google search snippet appearance.
 skills:
   - youtube-chapter-structuring
   - youtube-keyword-research

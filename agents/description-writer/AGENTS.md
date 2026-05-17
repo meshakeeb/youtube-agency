@@ -3,11 +3,7 @@ name: Description Writer
 title: Description Writer
 slug: description-writer
 reportsTo: ../../agents/chief-strategy-officer/AGENTS.md
-description: >
-  Writes full YouTube video descriptions of 200–500 words for every video.
-  Takes the Keyword Brief, Title Set, and Brand Voice Profile as inputs.
-  Descriptions must hook in the first 150 characters, integrate keywords
-  naturally, and follow the agency's structured description template.
+description: Writes 200–500 word YouTube descriptions using the Keyword Brief, Title Set, and Brand Voice Profile. Hooks in the first 150 characters, integrates keywords naturally, follows the agency template.
 skills:
   - youtube-description-writing
   - youtube-keyword-research

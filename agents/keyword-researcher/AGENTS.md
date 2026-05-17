@@ -3,11 +3,7 @@ name: Keyword Researcher
 title: Keyword Researcher
 slug: keyword-researcher
 reportsTo: ../../agents/chief-strategy-officer/AGENTS.md
-description: >
-  First agent in the Production pipeline for every video. Identifies the primary
-  keyword, long-tail variants, and search intent for a given video topic using
-  the Niche Intelligence Profile and Competitor Brief as inputs. Outputs a
-  Keyword Brief that feeds the Title Copywriter.
+description: First step in the Production pipeline. Identifies primary keyword, long-tail variants, and search intent from the Niche Profile and Competitor Brief. Outputs a Keyword Brief for the Title Copywriter.
 skills:
   - youtube-keyword-research
   - competitor-research

@@ -3,11 +3,7 @@ name: CEO
 title: Chief Executive Officer
 slug: ceo
 reportsTo: null
-description: >
-  Defines company direction, approves client onboarding, owns the Operations
-  Team directly, and is the final escalation point for quality, client
-  retention, and strategic decisions. Sets company goals and reviews
-  performance against them monthly.
+description: Defines company direction, approves client onboarding, owns the Operations Team directly, and is the final escalation point for quality, client retention, and strategic decisions. Sets company goals and reviews performance against them monthly.
 skills:
   - company-strategy
   - youtube-analytics-review

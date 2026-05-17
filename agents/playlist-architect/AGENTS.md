@@ -3,11 +3,7 @@ name: Playlist Architect
 title: Playlist Architect
 slug: playlist-architect
 reportsTo: ../../agents/chief-strategy-officer/AGENTS.md
-description: >
-  Designs and maintains the playlist structure and internal linking strategy
-  for every client's channel. Maximizes session watch time by grouping videos
-  into strategic playlists and designing end screen and card linking patterns.
-  Runs at onboarding and reviews channel architecture quarterly.
+description: Designs playlist structure and internal linking for every channel. Maximizes session watch time via strategic playlists, end screens, and cards. Runs at onboarding and quarterly reviews.
 skills:
   - playlist-strategy
   - niche-mapping

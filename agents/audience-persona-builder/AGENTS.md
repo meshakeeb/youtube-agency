@@ -3,12 +3,7 @@ name: Audience Persona Builder
 title: Audience Persona Builder
 slug: audience-persona-builder
 reportsTo: ../../agents/chief-strategy-officer/AGENTS.md
-description: >
-  Builds the Audience Persona Card for every client using the Niche Intelligence
-  Profile as input. Defines who the viewer is, what triggers their click, their
-  knowledge level, intent, platform behavior, and what language resonates with
-  them. This card is mandatory input for the Title Copywriter and Thumbnail
-  Strategist.
+description: Builds the Audience Persona Card for every client from the Niche Intelligence Profile. Defines viewer identity, click triggers, knowledge level, intent, and language rules. Required input for Title Copywriter and Thumbnail Strategist.
 skills:
   - audience-research
   - niche-mapping
