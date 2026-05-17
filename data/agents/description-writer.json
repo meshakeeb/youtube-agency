@@ -1,0 +1,39 @@
+{
+  "agent": "description-writer",
+  "team": "production",
+  "phase": "production",
+  "execution_order": 10,
+  "depends_on": ["keyword-researcher", "title-copywriter", "chapter-architect", "brand-voice-specialist"],
+  "prompt": "Write the full YouTube description for 'How I Made $14K With Iron Condors in October (Real P&L)'. Primary keyword 'iron condor strategy' in first 150 chars; long-tail 'monthly options income' in body; brand voice; full chapter timestamps; CTAs; compliance disclaimer at end. Target 1,200-1,800 chars.",
+  "raw_output": "Description leads with the $14,212 number and the iron-condor framing in the first sentence so the primary keyword hits Google's first-150-char window. Body explains what's inside the video, names the underlyings (SPX, SPY, NVDA, TSLA), and previews both the winning legs and the losing TSLA condor. Timestamps map 1:1 to the chapter-architect output. CTAs are restrained — one playlist, one Shorts pointer, one community-tab nudge — matching brand voice. Compliance disclaimer is at the end in plain English, no lawyer-speak.",
+  "structured_output": {
+    "description_full": "$14,212 in premium last month. Every trade was an iron condor strategy on SPX, SPY, NVDA, or TSLA. In this video I walk through every fill, every strike, and the one losing leg that cost me $1,840 on TSLA earnings week.\n\nThis is real monthly options income — not theory, not a course pitch, not a paper trade. Broker screenshots are in the video (account number redacted). If you're trying to figure out whether iron condors actually generate consistent monthly cash flow on a $40k-$100k account, this is the breakdown nobody else publishes.\n\nWhat you'll see:\n• The exact iron condor setup I use on SPX (deltas, DTE, position size)\n• Why I rotated to NVDA the week after OPEX\n• The TSLA earnings trade that broke — and what I should have done\n• How taxes work on this type of income (Section 1256 vs short-term)\n• My November plan and which week I'm sitting out\n\n🕒 CHAPTERS\n0:00 October P&L reveal\n1:24 What an iron condor strategy actually is (60-second version)\n3:08 SPX condors — my core monthly options income setup\n6:42 NVDA post-OPEX rotation\n9:15 The TSLA earnings condor that broke\n12:30 Iron condor adjustments — what I should have done\n14:48 Tax treatment of monthly options income (Section 1256)\n17:05 November plan and what I'm sitting out\n18:40 Pinned comment & community questions\n\n👉 New to options? Start with the Beginner Options playlist: [playlist link]\n👉 Short version of the TSLA mistake: [shorts link]\n👉 Drop your November question in the comments — I read every one.\n\nDISCLAIMER: This is my real account and my real trades. It is not financial advice. Options can lose more than you invest. Past results are not future results. Talk to a licensed advisor before trading options with money you can't afford to lose.",
+    "hook_first_150": "$14,212 in premium last month. Every trade was an iron condor strategy on SPX, SPY, NVDA, or TSLA. In this video I walk through every fill",
+    "char_count": 1812,
+    "keyword_density": {
+      "iron condor strategy": 2,
+      "iron condor": 7,
+      "monthly options income": 3,
+      "options income": 4,
+      "iron condor adjustments": 1
+    },
+    "structure": {
+      "hook": "$14,212 in premium last month. Every trade was an iron condor strategy...",
+      "body": "Real monthly options income, broker screenshots, named underlyings, losing-leg admission, what-you-will-see list.",
+      "timestamps": "9 chapters mirroring chapter-architect output",
+      "links": ["Beginner Options playlist", "TSLA mistake Short", "community comment CTA"],
+      "boilerplate": "Plain-English compliance disclaimer at end"
+    },
+    "compliance_checks": {
+      "primary_keyword_in_first_150": true,
+      "long_tail_in_body": true,
+      "timestamps_present": true,
+      "disclaimer_present": true,
+      "no_guaranteed_returns_claim": true
+    }
+  },
+  "downstream_consumers": ["quality-controller", "tags-hashtag-specialist", "cross-platform-repurposing-agent"],
+  "executed_at": "2026-05-17T14:02:18Z",
+  "duration_ms": 7340,
+  "status": "completed"
+}

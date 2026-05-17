@@ -1,0 +1,192 @@
+{
+  "generated_at": "2026-05-17T14:03:45Z",
+  "schema_version": "1.0.0",
+  "client": {
+    "id": "client_alphatradertv",
+    "name": "AlphaTraderTV",
+    "owner_name": "Alex",
+    "niche": "Trading Education — Options Income, Equities, Crypto (US, beginner-to-intermediate)",
+    "baseline": {
+      "subs": 38412,
+      "videos_published": 142,
+      "ctr": 2.1,
+      "avd_seconds": 252,
+      "view_velocity_30d": 18420,
+      "watch_time_hours_30d": 41250
+    },
+    "target": {
+      "subs": 100000,
+      "horizon_months": 9,
+      "ctr": 4.0,
+      "avd_seconds": 285
+    }
+  },
+  "entities": {
+    "channel": {
+      "channel_id": "UC_alphatradertv",
+      "name": "AlphaTraderTV",
+      "language": "en",
+      "country": "US",
+      "subs": 41940,
+      "lifetime_videos": 143,
+      "playlists_count_planned": 6
+    },
+    "videos": [
+      {
+        "video_id": "vid_143",
+        "title": "How I Made $14K With Iron Condors in October (Real P&L)",
+        "duration_seconds": 1140,
+        "primary_keyword": "iron condor strategy",
+        "published_at": "2026-05-13T14:00:00Z",
+        "ctr_96h": 6.4,
+        "views_96h": 38400,
+        "avd_seconds_96h": 352,
+        "status": "published"
+      },
+      { "video_id": "vid_142", "title": "How I Read Options Flow", "ctr": 3.6, "avd_seconds": 301, "status": "published" },
+      { "video_id": "vid_138", "title": "$2k → $14k Options Challenge Update", "ctr": 5.4, "avd_seconds": 362, "status": "published" },
+      { "video_id": "vid_125", "title": "Options Trading for Beginners (Full Guide)", "ctr": 3.9, "avd_seconds": 412, "status": "published" },
+      { "video_id": "vid_119", "title": "Why I Sold All My Bitcoin", "ctr": 1.1, "avd_seconds": 198, "status": "flagged_sunset" }
+    ],
+    "playlists": [
+      { "playlist_id": "pl_001", "title": "Beginner Options: Start Here", "target_keyword": "options trading for beginners", "target_video_count": 12 },
+      { "playlist_id": "pl_002", "title": "Monthly Options Income", "target_keyword": "monthly options income", "target_video_count": 18 },
+      { "playlist_id": "pl_003", "title": "Earnings & Event Trades", "target_keyword": "earnings options strategy", "target_video_count": 10 },
+      { "playlist_id": "pl_004", "title": "Iron Condor Deep Dive", "target_keyword": "iron condor strategy", "target_video_count": 8 },
+      { "playlist_id": "pl_005", "title": "Risk Management & Position Sizing", "target_keyword": "options risk management", "target_video_count": 6 },
+      { "playlist_id": "pl_006", "title": "Weekly Market Recaps", "target_keyword": "weekly market recap", "target_video_count": 0 }
+    ],
+    "competitors": [
+      { "id": "comp_001", "name": "Benjamin", "subs": 1450000, "overlap_score": 0.82 },
+      { "id": "comp_002", "name": "InTheMoney", "subs": 980000, "overlap_score": 0.88 },
+      { "id": "comp_003", "name": "Project Finance", "subs": 540000, "overlap_score": 0.79 },
+      { "id": "comp_004", "name": "tastylive", "subs": 410000, "overlap_score": 0.71 },
+      { "id": "comp_005", "name": "SMB Capital", "subs": 380000, "overlap_score": 0.58 },
+      { "id": "comp_006", "name": "Joe Burgoyne (OIC)", "subs": 165000, "overlap_score": 0.66 },
+      { "id": "comp_007", "name": "Karsten Schaeffer", "subs": 142000, "overlap_score": 0.73 },
+      { "id": "comp_008", "name": "OptionsPlay", "subs": 118000, "overlap_score": 0.61 },
+      { "id": "comp_009", "name": "Wealthsimple Options", "subs": 95000, "overlap_score": 0.48 },
+      { "id": "comp_010", "name": "The Trading Channel (Options)", "subs": 84000, "overlap_score": 0.55 }
+    ],
+    "personas": [
+      {
+        "persona_id": "persona_marcus",
+        "name": "Marcus the Operator",
+        "is_primary": true,
+        "age": 32,
+        "occupation": "senior software engineer",
+        "investable_assets_usd": 95000,
+        "knowledge_tier": "intermediate"
+      }
+    ]
+  },
+  "metrics": {
+    "current": {
+      "ctr": 3.4,
+      "avd_seconds": 278,
+      "subs": 41940,
+      "view_velocity_30d": 27800,
+      "watch_time_hours_30d": 58200,
+      "net_subs_per_week": 1180,
+      "search_traffic_share_pct": 14,
+      "suggested_traffic_share_pct": 49
+    },
+    "trend_7d": [
+      { "day": "2026-05-10", "ctr": 2.1, "subs": 38412, "views": 2620 },
+      { "day": "2026-05-11", "ctr": 2.3, "subs": 38510, "views": 2810 },
+      { "day": "2026-05-12", "ctr": 2.4, "subs": 38640, "views": 3140 },
+      { "day": "2026-05-13", "ctr": 4.8, "subs": 38980, "views": 9420 },
+      { "day": "2026-05-14", "ctr": 5.2, "subs": 39620, "views": 11240 },
+      { "day": "2026-05-15", "ctr": 4.6, "subs": 40610, "views": 9810 },
+      { "day": "2026-05-16", "ctr": 4.1, "subs": 41940, "views": 7600 }
+    ],
+    "trend_30d": [
+      { "week": "W1", "ctr": 2.1, "subs_end": 38820, "views": 18420 },
+      { "week": "W2", "ctr": 2.4, "subs_end": 39260, "views": 19840 },
+      { "week": "W3", "ctr": 2.8, "subs_end": 39880, "views": 22100 },
+      { "week": "W4", "ctr": 3.4, "subs_end": 41940, "views": 27800 }
+    ],
+    "trend_90d": [
+      { "month": "2026-03", "ctr": 2.0, "subs_end": 37600, "view_velocity": 17840 },
+      { "month": "2026-04", "ctr": 2.1, "subs_end": 38412, "view_velocity": 18420 },
+      { "month": "2026-05", "ctr": 3.4, "subs_end": 41940, "view_velocity": 27800 }
+    ]
+  },
+  "lists": {
+    "keywords": [
+      { "keyword": "iron condor strategy", "volume": 38500, "difficulty": 52, "tier": "primary" },
+      { "keyword": "iron condor monthly income", "volume": 14800, "difficulty": 38, "tier": "long_tail" },
+      { "keyword": "monthly options income", "volume": 18600, "difficulty": 41, "tier": "long_tail" },
+      { "keyword": "iron condor real p&l", "volume": 4400, "difficulty": 24, "tier": "long_tail" },
+      { "keyword": "options income $1000 month", "volume": 9600, "difficulty": 32, "tier": "long_tail" },
+      { "keyword": "iron condor adjustments", "volume": 8900, "difficulty": 31, "tier": "long_tail" },
+      { "keyword": "iron condor spx", "volume": 7200, "difficulty": 34, "tier": "long_tail" },
+      { "keyword": "iron condor for beginners", "volume": 12400, "difficulty": 41, "tier": "secondary" }
+    ],
+    "tags": [
+      "iron condor strategy", "iron condor monthly income", "monthly options income",
+      "iron condor real p&l", "options income breakdown", "iron condor adjustments",
+      "selling iron condors weekly", "iron condor spx", "options strategy for income", "alphatradertv"
+    ],
+    "hashtags": ["#IronCondor", "#OptionsIncome", "#OptionsTrading", "#MonthlyIncome", "#AlphaTraderTV"],
+    "competitors": ["Benjamin", "InTheMoney", "Project Finance", "tastylive", "SMB Capital", "Joe Burgoyne (OIC)", "Karsten Schaeffer", "OptionsPlay", "Wealthsimple Options", "The Trading Channel (Options)"],
+    "playlists": ["Beginner Options: Start Here", "Monthly Options Income", "Earnings & Event Trades", "Iron Condor Deep Dive", "Risk Management & Position Sizing", "Weekly Market Recaps"],
+    "videos": ["vid_143", "vid_142", "vid_138", "vid_125", "vid_119"]
+  },
+  "insights": [
+    "New thumbnail template alone lifted channel CTR from 2.1% to 3.4% in 30 days.",
+    "Loss-honesty positioning (TSLA-blowup Short, 142k views) is the strongest cold-traffic converter.",
+    "Tuesday 14:00 publish slot outperforms Thursday slots by 22% on first-24h views.",
+    "Search traffic share unchanged at 14% — SEO lift not yet flowing through; investigate descriptions.",
+    "Crypto back-catalog dragging average CTR; vid_119 is the worst offender.",
+    "NVDA-related back-catalog saw a 38% impression spike — earnings-driven harvest opportunity.",
+    "Community-tab poll on the October P&L video pulled 1,840 votes — best-ever response.",
+    "Subscriber velocity is +187% WoW; the 9-month 100k target now has a 12-15% safety margin.",
+    "Section 1256 tax content is empty space in the niche and lifts AVD on retention-sensitive viewers.",
+    "Persona Marcus's primary device split (evening TV, daytime phone) maps to publish windows."
+  ],
+  "recommendations": [
+    { "rank": 1, "action": "Lock Tuesday/Friday publish slots (Tuesday 14:00 outperforms Thursday by 22%)", "owner": "production", "effort": "low" },
+    { "rank": 2, "action": "Publish TSLA-blowup post-mortem next Tuesday — cold-traffic Short demand validated", "owner": "production", "effort": "medium" },
+    { "rank": 3, "action": "Metadata refresh top 3 NVDA back-catalog videos to harvest earnings-impression spike", "owner": "production", "effort": "low" },
+    { "rank": 4, "action": "Add 'Monthly Options Income' playlist link to last 12 video descriptions", "owner": "growth", "effort": "low" },
+    { "rank": 5, "action": "Sunset vid_119 (Why I Sold All My Bitcoin); add to crypto-decision queue", "owner": "operations", "effort": "low" },
+    { "rank": 6, "action": "Investigate why search traffic share stuck at 14% despite SEO improvements", "owner": "intelligence", "effort": "medium" },
+    { "rank": 7, "action": "Raise community-tab cadence from 1.8x to 3-4x/week", "owner": "growth", "effort": "low" },
+    { "rank": 8, "action": "Raise Q1 sub target from 55k to 60k based on velocity (CEO approved)", "owner": "operations", "effort": "low" },
+    { "rank": 9, "action": "Add tax-aware options content to Q2 editorial — empty space, low difficulty", "owner": "intelligence", "effort": "medium" },
+    { "rank": 10, "action": "Lock weekly Friday performance sync to keep momentum across teams", "owner": "operations", "effort": "low" }
+  ],
+  "agent_runs": [
+    { "agent": "channel-auditor", "status": "completed", "started_at": "2026-05-17T14:00:04Z", "ended_at": "2026-05-17T14:00:12Z", "duration_ms": 8421 },
+    { "agent": "brand-voice-specialist", "status": "completed", "started_at": "2026-05-17T14:00:17Z", "ended_at": "2026-05-17T14:00:24Z", "duration_ms": 7188 },
+    { "agent": "niche-intelligence-analyst", "status": "completed", "started_at": "2026-05-17T14:00:25Z", "ended_at": "2026-05-17T14:00:35Z", "duration_ms": 9842 },
+    { "agent": "audience-persona-builder", "status": "completed", "started_at": "2026-05-17T14:00:39Z", "ended_at": "2026-05-17T14:00:48Z", "duration_ms": 8932 },
+    { "agent": "competitor-analyst", "status": "completed", "started_at": "2026-05-17T14:00:51Z", "ended_at": "2026-05-17T14:01:02Z", "duration_ms": 11240 },
+    { "agent": "chief-strategy-officer", "status": "completed", "started_at": "2026-05-17T14:01:08Z", "ended_at": "2026-05-17T14:01:18Z", "duration_ms": 10310 },
+    { "agent": "ceo", "status": "completed", "started_at": "2026-05-17T14:01:26Z", "ended_at": "2026-05-17T14:01:30Z", "duration_ms": 4210 },
+    { "agent": "keyword-researcher", "status": "completed", "started_at": "2026-05-17T14:01:53Z", "ended_at": "2026-05-17T14:02:00Z", "duration_ms": 6840 },
+    { "agent": "title-copywriter", "status": "completed", "started_at": "2026-05-17T14:02:04Z", "ended_at": "2026-05-17T14:02:09Z", "duration_ms": 4920 },
+    { "agent": "description-writer", "status": "completed", "started_at": "2026-05-17T14:02:11Z", "ended_at": "2026-05-17T14:02:18Z", "duration_ms": 7340 },
+    { "agent": "tags-hashtag-specialist", "status": "completed", "started_at": "2026-05-17T14:02:22Z", "ended_at": "2026-05-17T14:02:26Z", "duration_ms": 3940 },
+    { "agent": "chapter-architect", "status": "completed", "started_at": "2026-05-17T14:02:28Z", "ended_at": "2026-05-17T14:02:33Z", "duration_ms": 5210 },
+    { "agent": "thumbnail-strategist", "status": "completed", "started_at": "2026-05-17T14:02:36Z", "ended_at": "2026-05-17T14:02:42Z", "duration_ms": 6120 },
+    { "agent": "quality-controller", "status": "completed", "started_at": "2026-05-17T14:02:45Z", "ended_at": "2026-05-17T14:02:51Z", "duration_ms": 5680 },
+    { "agent": "community-engagement-strategist", "status": "completed", "started_at": "2026-05-17T14:02:55Z", "ended_at": "2026-05-17T14:03:00Z", "duration_ms": 4880 },
+    { "agent": "cross-platform-repurposing-agent", "status": "completed", "started_at": "2026-05-17T14:03:00Z", "ended_at": "2026-05-17T14:03:08Z", "duration_ms": 7640 },
+    { "agent": "playlist-architect", "status": "completed", "started_at": "2026-05-17T14:03:10Z", "ended_at": "2026-05-17T14:03:16Z", "duration_ms": 6420 },
+    { "agent": "performance-analyst", "status": "completed", "started_at": "2026-05-17T14:03:18Z", "ended_at": "2026-05-17T14:03:24Z", "duration_ms": 6210 },
+    { "agent": "client-reporting-agent", "status": "completed", "started_at": "2026-05-17T14:03:27Z", "ended_at": "2026-05-17T14:03:32Z", "duration_ms": 5480 }
+  ],
+  "pipeline_state": {
+    "current_phase": "monitoring",
+    "onboarding_complete": true,
+    "production_complete_for_video": "vid_143",
+    "growth_complete_for_video": "vid_143",
+    "blocking_agents": [],
+    "gate_decisions": [
+      { "gate": "ceo_onboarding_approval", "decision": "APPROVED", "at": "2026-05-17T14:01:30Z" },
+      { "gate": "quality_controller_vid_143", "decision": "APPROVED", "score": 95, "at": "2026-05-17T14:02:51Z" }
+    ]
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "agent": "cross-platform-repurposing-agent",
+  "team": "growth",
+  "phase": "growth",
+  "execution_order": 16,
+  "depends_on": ["quality-controller", "brand-voice-specialist", "description-writer"],
+  "prompt": "Repurpose the iron condor October P&L video into a multi-platform package: 3 Shorts (with hooks and CTAs), a Twitter/X thread, a LinkedIn post, an Instagram caption, and a Telegram announcement. Keep brand voice. Each platform optimized for its own retention pattern.",
+  "raw_output": "Three Shorts target the three most-screenshotable moments: the $14,212 reveal, the TSLA blowup post-mortem, and the Section 1256 tax line (low-supply, high-curiosity). Twitter thread is 9 tweets, leading with the dollar figure and ending with a CTA back to the full video. LinkedIn flips to a longer reflective post — Marcus checks LinkedIn during lunch and responds to first-person operator content. Instagram caption is short and visual-led. Telegram is a 3-line announcement for the existing free Discord cross-poster.",
+  "structured_output": {
+    "shorts": [
+      {
+        "title": "October Options P&L Reveal",
+        "hook": "I made $14,212 selling iron condors in October. Here's the screenshot.",
+        "cta": "Full breakdown on the channel — link in bio.",
+        "target_duration_seconds": 45,
+        "source_timestamp_in_long": "0:00-1:24"
+      },
+      {
+        "title": "The TSLA Trade That Broke",
+        "hook": "I lost $1,840 on TSLA earnings last month. Here's what I should have done.",
+        "cta": "Full post-mortem in the October P&L video.",
+        "target_duration_seconds": 52,
+        "source_timestamp_in_long": "9:15-12:30"
+      },
+      {
+        "title": "Section 1256 Tax Hack",
+        "hook": "If you sell SPX iron condors, your tax rate is lower than your day job. Here's why.",
+        "cta": "Tax chapter in the full video — link in bio.",
+        "target_duration_seconds": 48,
+        "source_timestamp_in_long": "14:48-17:05"
+      }
+    ],
+    "twitter_thread": "1/ I made $14,212 selling iron condors in October.\n\nReal account. Real fills. Including the one trade that lost $1,840.\n\nHere's the breakdown 🧵\n\n2/ Setup: SPX iron condors, 30-45 DTE, ~16 delta short strikes, $10 wings. Position size = max loss never above 2% of account.\n\n3/ Core month was 4 SPX condors. Three hit max profit. One closed early on the put side for 65%. Total: +$8,400.\n\n4/ Added NVDA condors after October OPEX when IV ranked at 38. Two trades. +$3,100 combined. Closed both at 50% profit.\n\n5/ Then I got greedy and put a condor on TSLA going into earnings. Short call side blew through. -$1,840.\n\n6/ Lesson: never carry a defined-risk options trade through a binary event unless you've explicitly priced in max loss as the base case.\n\n7/ Tax note: SPX condors are Section 1256 — 60/40 long/short-term treatment. The TSLA loss offsets short-term gains elsewhere. Talk to your CPA.\n\n8/ November plan: sitting out the first FOMC week. Running SPX condors every other Friday. No earnings condors on single names.\n\n9/ Full video with every fill and every strike is up on the channel. Link below 👇\n\n[YouTube link]",
+    "linkedin_post": "Closed October at +$14,212 from a single options strategy — iron condors.\n\nThe full breakdown is on the YouTube channel today, but the meta-point is worth sharing here:\n\nThe strategy itself is not the edge. The edge is doing it the same way every month, sizing so the max loss is a number you can stomach, and writing the post-mortem in public when a trade breaks.\n\nI lost $1,840 on a TSLA trade I shouldn't have placed. That's in the video too. The point of publishing the loss next to the win is that it's the only version of this content that actually helps anyone.\n\nIf you've ever wondered whether structured options income is a real thing or a YouTube fantasy, the receipts are in the video.\n\n[YouTube link]\n\n#OptionsTrading #IronCondor",
+    "instagram_caption": "October P&L: +$14,212 on iron condors. One losing trade. Full breakdown on YouTube — link in bio.",
+    "telegram_announcement": "📈 New video is live: October P&L breakdown. $14,212 from iron condors, including the one TSLA trade that cost me $1,840.\nWatch + drop your November questions in the comments.\n[YouTube link]",
+    "compliance_checks": {
+      "brand_voice_match": true,
+      "no_guaranteed_returns_claim": true,
+      "platform_native_format": true,
+      "links_consistent": true
+    }
+  },
+  "downstream_consumers": ["client-reporting-agent", "performance-analyst"],
+  "executed_at": "2026-05-17T14:03:08Z",
+  "duration_ms": 7640,
+  "status": "completed"
+}

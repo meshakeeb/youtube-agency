@@ -1,0 +1,32 @@
+{
+  "agent": "keyword-researcher",
+  "team": "production",
+  "phase": "production",
+  "execution_order": 8,
+  "depends_on": ["competitor-analyst", "niche-intelligence-analyst", "chief-strategy-officer"],
+  "prompt": "For the upcoming AlphaTraderTV video on monthly options income ($14k October P&L using iron condors), identify the primary keyword, long-tail variations, search intent, opportunity score, and placement guidance for title/description/tags/chapters.",
+  "raw_output": "The primary keyword for this video is 'iron condor strategy' — 38,500 monthly US searches, difficulty 52, informational intent skewing transactional (viewers want to learn AND replicate). It's the load-bearing term across title, description, tags, and at least one chapter title.\n\nThe stronger SEO play, however, is a long-tail stack. 'Iron condor monthly income' (14,800 vol, difficulty 38) is the differentiation keyword; combine it with the primary in the title for compound ranking. 'Monthly options income breakdown' (5,400, 26) and 'iron condor real P&L' (4,400, 24) are exact-match thumbnail/description plays. 'Options income $1000 month' (9,600, 32) is the beginner-funnel sister term.\n\nIntent breakdown: 62% of searches are educational-explanatory ('what is', 'how does'), 28% are execution-focused ('how to', 'setup', 'when to'), 10% are validation ('does it work', 'real results'). This video should serve all three — open with execution proof, walk through mechanics, close with results validation.\n\nPlacement: primary keyword in first 40 characters of title, exact-match in first 150 chars of description, in tag #1, in chapter title for the setup section, in pinned comment, in Shorts CTAs. Long-tail 'monthly options income' should appear in description body, tag #2, and one mid-chapter title. Opportunity score is high — composite 0.81 — driven by ranking-page weakness (no competitor combines real fills + named strikes + monthly view) and AlphaTraderTV's existing topical authority in options income.",
+  "structured_output": {
+    "primary_keyword": "iron condor strategy",
+    "search_volume": 38500,
+    "difficulty": 52,
+    "intent": "informational-transactional",
+    "intent_split": { "educational": 62, "execution": 28, "validation": 10 },
+    "long_tail": [
+      { "keyword": "iron condor monthly income", "volume": 14800, "difficulty": 38, "intent": "transactional" },
+      { "keyword": "monthly options income breakdown", "volume": 5400, "difficulty": 26, "intent": "informational" },
+      { "keyword": "iron condor real P&L", "volume": 4400, "difficulty": 24, "intent": "validation" },
+      { "keyword": "options income $1000 month", "volume": 9600, "difficulty": 32, "intent": "transactional" },
+      { "keyword": "iron condor SPX weekly", "volume": 7200, "difficulty": 34, "intent": "execution" },
+      { "keyword": "iron condor adjustments", "volume": 8900, "difficulty": 31, "intent": "execution" },
+      { "keyword": "selling iron condors weekly", "volume": 5100, "difficulty": 29, "intent": "execution" },
+      { "keyword": "iron condor for beginners", "volume": 12400, "difficulty": 41, "intent": "educational" }
+    ],
+    "opportunity_score": 0.81,
+    "placement_notes": "Primary keyword in first 40 chars of title, first 150 chars of description, tag #1, setup chapter title, pinned comment, Shorts CTAs. 'Iron condor monthly income' compound-stacked in title for differentiation. Long-tail 'monthly options income' in description body + tag #2 + mid-chapter."
+  },
+  "downstream_consumers": ["title-copywriter", "description-writer", "tags-hashtag-specialist", "chapter-architect", "thumbnail-strategist"],
+  "executed_at": "2026-05-17T14:02:00Z",
+  "duration_ms": 6840,
+  "status": "completed"
+}

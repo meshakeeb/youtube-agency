@@ -1,0 +1,76 @@
+{
+  "agent": "audience-persona-builder",
+  "team": "intelligence",
+  "phase": "onboarding",
+  "execution_order": 4,
+  "depends_on": ["channel-auditor", "niche-intelligence-analyst"],
+  "prompt": "Build the primary audience persona for AlphaTraderTV using channel analytics (38k subs, US-heavy, 78% male, 25-44 age band, 4:12 AVD on options content) and the niche map. Define one primary persona deeply — demographics, knowledge level, intent, click triggers, language preferences, platform behavior — so downstream copywriting agents can write to one human, not a crowd.",
+  "raw_output": "The center of the AlphaTraderTV audience is Marcus, 32, software engineer in Austin pulling $145k/yr, married, no kids yet. He's been trading his own brokerage account for about three years — started with index funds and dividend stocks, graduated to selling cash-secured puts on names he already wanted to own, and is now experimenting with credit spreads and iron condors on SPX and a handful of large-caps.\n\nHe is not a beginner. He knows what theta is, can read a basic options chain, and has placed maybe 200 trades. But he is not advanced — he has never managed an assignment, has never rolled a losing position, and is genuinely afraid of getting blown up by an earnings move he didn't see coming. He treats this as a serious second income stream, not entertainment. He wants $1,500-$3,000/month of premium income within 12 months without quitting his job.\n\nHe watches YouTube primarily on a 65\" living-room TV in the evening (8-10pm CT) and on his phone during lunch. He'll watch 18-25 minutes of a video he trusts but will bounce inside 30 seconds if the host hypes, hedges, or hides the real numbers. He clicks on specific dollar figures, specific strikes, specific months, and on anything with the word 'iron condor' in the title. He scrolls past 'to the moon', 'easy money', and 'beginners' (he doesn't self-identify as one anymore).\n\nHis trust triggers are: real broker screenshots with personal info redacted, named strikes and expirations, an explicit losing trade in the same video as the winning ones, and visible math (max profit, max loss, breakevens). He distrusts: course pitches, paid Discord rooms, anything 'guaranteed', and hosts who only show winners.\n\nHis platform behavior: he searches YouTube specifically for trades ('SPX iron condor November', 'TSLA earnings play'), subscribes selectively (12 finance channels total), comments rarely but reads comments often, joins free Discord communities, will pay for one premium thing per year if it earns its keep.",
+  "structured_output": {
+    "persona_name": "Marcus the Operator",
+    "demographics": {
+      "age": 32,
+      "gender": "male",
+      "country": "United States",
+      "city_type": "tech metro (Austin/Seattle/Raleigh)",
+      "occupation": "senior software engineer",
+      "income_usd": 145000,
+      "marital_status": "married, no kids",
+      "education": "bachelor's, CS or engineering",
+      "investable_assets_usd": 95000
+    },
+    "knowledge_level": {
+      "tier": "intermediate",
+      "experience_years": 3,
+      "trades_placed_lifetime": 200,
+      "knows": ["theta", "delta basics", "options chain reading", "cash-secured puts", "covered calls"],
+      "does_not_know": ["managing assignment", "rolling losers", "gamma risk near OPEX", "tax-aware position structuring"]
+    },
+    "intent": {
+      "primary": "Generate $1.5-3k/month options premium without quitting day job",
+      "secondary": "Avoid blowup trades; understand mechanics he's already half-using",
+      "anti_intent": "Day trading, signal-room subscriptions, get-rich-quick"
+    },
+    "click_triggers": [
+      "Specific dollar figures in title ($14k, $8,200)",
+      "Named strategies (iron condor, wheel, credit spread)",
+      "Time bounds (October, monthly, weekly)",
+      "Real P&L promise (Full Strategy Breakdown, Actual Fills)",
+      "Honest framing (I was wrong, here's the loss)"
+    ],
+    "click_repellents": [
+      "'Beginners' framing (he's past that)",
+      "'Guaranteed', 'easy', 'passive'",
+      "Stock-photo thumbnails with no face",
+      "Generic 'market update' titles with no specific name or trade",
+      "Excessive emoji or all-caps in titles"
+    ],
+    "language_rules": {
+      "assume_knows": ["theta", "delta", "strike", "expiration", "premium", "IV"],
+      "always_define": ["gamma squeeze", "pin risk", "skew", "vega", "assignment mechanics"],
+      "avoid": ["bro", "fam", "literally", "ape", "diamond hands"],
+      "reading_level": "10th-12th grade",
+      "preferred_units": "USD absolute and percentage, both shown"
+    },
+    "platform_behavior": {
+      "primary_device_evening": "65\" living-room TV",
+      "primary_device_daytime": "iPhone, lunch break",
+      "session_length_minutes": 22,
+      "bounce_threshold_seconds": 30,
+      "subscribed_finance_channels": 12,
+      "comments_per_month": 2,
+      "buys_one_premium_product_per_year": true,
+      "active_communities": ["r/options", "r/thetagang", "1-2 free Discords"]
+    },
+    "decision_journey": {
+      "awareness": "YouTube search for specific strategy",
+      "consideration": "Watches 3-5 channels, compares specificity",
+      "trust": "Built via real broker screenshots and admitted losses",
+      "action": "Paper-trades the setup, then small live position"
+    }
+  },
+  "downstream_consumers": ["title-copywriter", "description-writer", "thumbnail-strategist", "community-engagement-strategist", "chief-strategy-officer"],
+  "executed_at": "2026-05-17T14:00:48Z",
+  "duration_ms": 8932,
+  "status": "completed"
+}

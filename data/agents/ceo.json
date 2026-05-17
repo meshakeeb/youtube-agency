@@ -1,0 +1,33 @@
+{
+  "agent": "ceo",
+  "team": "operations",
+  "phase": "onboarding",
+  "execution_order": 7,
+  "depends_on": ["chief-strategy-officer"],
+  "prompt": "Review CSO synthesis and escalations for AlphaTraderTV onboarding. Approve or reject the 9-month plan and resolve each escalation explicitly.",
+  "raw_output": "AlphaTraderTV onboarding is APPROVED. The intelligence stack is coherent, the persona is sharply defined, and the growth model is achievable without compromising brand integrity. The CSO has correctly identified the wedge (real-fill monthly options income) and the right cadence/CTR mechanics to reach 100k subs in 9 months.\n\nResolving escalations: (1) Crypto sub-brand — paused on main channel effective immediately. Defer the sub-brand decision to Q3 review with a go/no-go based on whether main channel hits 75k subs by end of Q2. (2) Compliance — engage outside counsel for a one-time review of 'real P&L' content guardrails, then operationalize a standing compliance checklist in the quality-controller gate. Budget approved up to $4,500. (3) Evergreen series production capacity — APPROVED at 15%, with quarterly review at the operations sync.\n\nQuarterly goals are locked: Q1 hit 55k subs and ship the Beginner Options playlist; Q2 hit 75k subs and validate earnings-week content; Q3 hit 100k subs and ship the Operator-tier playlist + decide on crypto sub-brand. Performance-analyst reports weekly to CSO, monthly to CEO. Client reporting cadence: weekly pulse Monday 9am, monthly deep-dive first Tuesday.",
+  "structured_output": {
+    "onboarding_decision": "APPROVED",
+    "approved_at": "2026-05-17T14:01:30Z",
+    "approved_by": "ceo-agent",
+    "quarterly_goals": [
+      { "quarter": "Q1", "subscriber_target": 55000, "deliverable": "Ship 'Beginner Options' playlist, 22 videos, hit 3.5% CTR" },
+      { "quarter": "Q2", "subscriber_target": 75000, "deliverable": "Validate earnings/Fed/OPEX calendar, hit 3.8% CTR, 4:45 AVD" },
+      { "quarter": "Q3", "subscriber_target": 100000, "deliverable": "Ship 'Operator' playlist, decide on crypto sub-brand, hit 4.0% CTR" }
+    ],
+    "escalation_resolutions": [
+      { "escalation": "Crypto sub-brand", "decision": "Paused on main. Decision deferred to Q3 review. Trigger: ≥75k subs by end Q2." },
+      { "escalation": "Compliance review on real-P&L content", "decision": "APPROVED. Engage outside counsel, budget up to $4,500. Operationalize compliance checklist in QC gate." },
+      { "escalation": "15% capacity to evergreen series", "decision": "APPROVED. Quarterly review at ops sync." }
+    ],
+    "reporting_cadence": {
+      "weekly_pulse": "Monday 09:00 client time",
+      "monthly_deep_dive": "First Tuesday of month",
+      "internal_performance_sync": "Friday 14:00 weekly"
+    }
+  },
+  "downstream_consumers": ["client-reporting-agent", "chief-strategy-officer", "performance-analyst"],
+  "executed_at": "2026-05-17T14:01:30Z",
+  "duration_ms": 4210,
+  "status": "completed"
+}

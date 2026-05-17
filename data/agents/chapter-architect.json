@@ -1,0 +1,34 @@
+{
+  "agent": "chapter-architect",
+  "team": "production",
+  "phase": "production",
+  "execution_order": 12,
+  "depends_on": ["keyword-researcher", "title-copywriter"],
+  "prompt": "Build the chapter structure for the 19:00 iron condor October P&L video. Hook chapter must be 0:00 and <= 90s. At least one chapter title contains the primary keyword 'iron condor strategy'. Cover P&L reveal, mechanics, three named trades (SPX, NVDA, TSLA loss), adjustments, tax treatment, November plan, and pinned-comment outro.",
+  "raw_output": "Nine chapters covering 19 minutes. Hook chapter 0:00-1:24 reveals the $14,212 number first and the strategy stack second, satisfying the persona's preference for outcome-then-mechanism. Chapter 2 carries the primary keyword in its title ('What an iron condor strategy actually is'). The middle three chapters are the three named trades. Chapter 6 ('Iron condor adjustments') ties to a high-gap-score long-tail keyword. The tax chapter is unusual in this niche — adds search defensibility on a low-supply query. Final two chapters keep retention through the back third and route to the pinned comment / community.",
+  "structured_output": {
+    "chapters": [
+      { "timestamp": "0:00", "title": "October P&L reveal", "keyword_present": false, "duration_seconds": 84 },
+      { "timestamp": "1:24", "title": "What an iron condor strategy actually is (60-second version)", "keyword_present": true, "duration_seconds": 104 },
+      { "timestamp": "3:08", "title": "SPX condors — my core monthly options income setup", "keyword_present": true, "duration_seconds": 214 },
+      { "timestamp": "6:42", "title": "NVDA post-OPEX rotation", "keyword_present": false, "duration_seconds": 153 },
+      { "timestamp": "9:15", "title": "The TSLA earnings condor that broke", "keyword_present": false, "duration_seconds": 195 },
+      { "timestamp": "12:30", "title": "Iron condor adjustments — what I should have done", "keyword_present": true, "duration_seconds": 138 },
+      { "timestamp": "14:48", "title": "Tax treatment of monthly options income (Section 1256)", "keyword_present": false, "duration_seconds": 137 },
+      { "timestamp": "17:05", "title": "November plan and what I'm sitting out", "keyword_present": false, "duration_seconds": 95 },
+      { "timestamp": "18:40", "title": "Pinned comment & community questions", "keyword_present": false, "duration_seconds": 80 }
+    ],
+    "total_duration": "19:00",
+    "total_duration_seconds": 1200,
+    "primary_keyword_chapters_count": 3,
+    "compliance_checks": {
+      "hook_chapter_under_90s": true,
+      "primary_keyword_in_at_least_one_chapter": true,
+      "all_chapters_have_unique_timestamps": true
+    }
+  },
+  "downstream_consumers": ["description-writer", "quality-controller", "thumbnail-strategist"],
+  "executed_at": "2026-05-17T14:02:33Z",
+  "duration_ms": 5210,
+  "status": "completed"
+}

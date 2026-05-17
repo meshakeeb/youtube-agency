@@ -1,0 +1,57 @@
+{
+  "agent": "brand-voice-specialist",
+  "team": "intelligence",
+  "phase": "onboarding",
+  "execution_order": 2,
+  "depends_on": ["channel-auditor"],
+  "prompt": "Given the AlphaTraderTV channel audit (62 health score, options-income concentration, mid-tier trading education, beginner-to-intermediate audience), define a brand voice profile. Analyze the host's 12 highest-AVD uploads for vocabulary, sentence rhythm, catchphrases, on-camera tonality, and trust markers. Produce voice rules that downstream writing agents (title, description, community) must follow.",
+  "raw_output": "AlphaTraderTV's host speaks like a sharp friend who happens to trade for a living — not a Wall Street suit, not a hype merchant. The voice lands in the gap between Graham Stephan's relaxed authority and Benjamin's tactical specificity. He reveals real P&L screenshots, names his exact strikes, and admits losses without flinching. That radical specificity is the brand's load-bearing asset.\n\nVocabulary skews concrete and numeric. He says 'I sold the 420/430 call spread' not 'I deployed a bearish strategy.' He says 'I was down $1,840 by Wednesday' not 'I experienced drawdown.' He uses 'edge', 'theta', 'IV crush', 'tape', 'flow' fluently but always glosses jargon within 8 seconds of first use. He never says 'guys' (says 'folks' or just nothing), never says 'literally', and never opens with 'in today's video.'\n\nSentence patterns are short, declarative, and front-load the number. 'I made $14,000 last month. Here's how.' is closer to the brand than 'In this video we'll break down how I generated profits.' He uses two-beat openers and rhetorical questions to set up reveals. Pacing accelerates on payoff lines, slows on risk disclaimers. The voice is confident, never cocky — when he's wrong he says 'I screwed this up' on camera.\n\nRed lines: no 'get rich quick' framing, no 'guaranteed' returns, no '$1M in 30 days' style claims (compliance and brand risk both), no NFT or memecoin shilling, no day-trading-room pitches, no calling viewers 'sheep' or 'normies', no political content, no shaming losers. Disclaimers go at the end, in plain English, never lawyer-speak.",
+  "structured_output": {
+    "tone": "Sharp, specific, financially-literate friend. Confident without hype. Numeric over abstract. Honest about losses.",
+    "voice_archetype": "The Operator (per Mark/Pearson archetypes) — competent, candid, results-focused",
+    "vocabulary_prefer": [
+      "edge", "theta", "IV crush", "tape", "flow", "strikes", "premium", "assignment", "rolled the position",
+      "I sold", "I bought", "I was wrong", "the math", "expected value", "risk-defined", "real P&L", "actual fills"
+    ],
+    "vocabulary_avoid": [
+      "guys", "literally", "in today's video", "smash that like", "to the moon", "diamond hands",
+      "guaranteed", "no-brainer", "easy money", "passive income hack", "normies", "sheep", "noob"
+    ],
+    "sentence_patterns": [
+      "Lead with the number: '$14,000 last month. Here's how.'",
+      "Two-beat opener: short statement, then setup question.",
+      "Reveal-then-explain: state outcome, then walk through mechanics.",
+      "Short declaratives stacked: 'I sold the spread. It hit max profit. I closed Friday.'",
+      "Admit-then-correct: 'I screwed this up. Here's what I should have done.'"
+    ],
+    "do_examples": [
+      "I closed October at +$14,212. Iron condors did most of the work.",
+      "The 420/430 call spread expired worthless. That's $480 in premium I keep.",
+      "I was wrong about Tesla earnings. Cost me $1,840. Here's the lesson."
+    ],
+    "dont_examples": [
+      "Hey guys, welcome back to the channel! In today's video...",
+      "This strategy GUARANTEES profits every single month!!!",
+      "Smash that like button and don't forget to subscribe, fam!"
+    ],
+    "red_lines": [
+      "No 'guaranteed' / 'risk-free' / 'no-loss' claims",
+      "No memecoin, NFT, or unregistered-security promotion",
+      "No paid signal-room or pump-group affiliations",
+      "No political content or culture-war framing",
+      "No mocking losing traders or audience members",
+      "Disclaimers in plain English, end of description, never buried"
+    ],
+    "voice_dimensions": {
+      "formality": 3,
+      "energy": 6,
+      "humor": 4,
+      "authority": 8,
+      "vulnerability": 7
+    }
+  },
+  "downstream_consumers": ["title-copywriter", "description-writer", "tags-hashtag-specialist", "community-engagement-strategist", "cross-platform-repurposing-agent", "quality-controller"],
+  "executed_at": "2026-05-17T14:00:24Z",
+  "duration_ms": 7188,
+  "status": "completed"
+}

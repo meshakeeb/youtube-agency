@@ -1,0 +1,60 @@
+{
+  "agent": "competitor-analyst",
+  "team": "intelligence",
+  "phase": "onboarding",
+  "execution_order": 5,
+  "depends_on": ["channel-auditor", "niche-intelligence-analyst"],
+  "prompt": "Identify the 10 most relevant direct competitors for AlphaTraderTV, pull their key metrics, and find keyword gaps where AlphaTraderTV can rank. For the upcoming video on monthly options income / iron condor strategy, surface the top 5 currently-ranking competitor videos and recommend a differentiation angle.",
+  "raw_output": "Direct competition for AlphaTraderTV clusters around options-income education in the 200k-1.5M sub band. Benjamin, InTheMoney, Project Finance, and tastylive define the upper boundary; SMB Capital, Joe Burgoyne, and Karsten Schaeffer fill the middle; OptionsPlay and Wealthsimple sit at the more institutional edge.\n\nBenjamin is the closest direct competitor on tactical specificity but leans heavier into TSLA/NVDA single-name options. InTheMoney owns the 'options strategy explainer' lane with whiteboard-style breakdowns. Project Finance is the technical authority — long, dense, low CTR but very high AVD. tastylive carries institutional pedigree but skews older.\n\nKeyword-gap analysis reveals 20 high-opportunity terms where the top 10 channels are NOT ranking strongly: 'iron condor monthly income', 'options income $1000 month', 'iron condor real P&L', 'tax-aware options strategy', 'options assignment what to do', 'rolling a losing iron condor', and similar long-tail intent queries. AlphaTraderTV's existing options-income authority is the wedge.\n\nFor the target video ('How I Made $14K Trading Options in October 2025 (Full Strategy Breakdown)'), the currently-ranking videos in the top 5 results for 'iron condor monthly income' are all either too theoretical (no real P&L) or too short (sub-6 minute explainers). The differentiation angle is: full-month real fills, named strikes, both winners AND the one losing leg, complete tax footprint at the end. No competitor combines all four.",
+  "structured_output": {
+    "top_competitors": [
+      { "name": "Benjamin", "channel_id": "UC_benjamin", "subs": 1450000, "avg_views_30d": 285000, "ctr": 5.8, "avd_seconds": 380, "upload_freq_per_week": 3.0, "overlap_score": 0.82 },
+      { "name": "InTheMoney", "channel_id": "UC_inthemoney", "subs": 980000, "avg_views_30d": 165000, "ctr": 5.2, "avd_seconds": 410, "upload_freq_per_week": 2.0, "overlap_score": 0.88 },
+      { "name": "Project Finance", "channel_id": "UC_projectfinance", "subs": 540000, "avg_views_30d": 72000, "ctr": 3.9, "avd_seconds": 520, "upload_freq_per_week": 1.5, "overlap_score": 0.79 },
+      { "name": "tastylive", "channel_id": "UC_tastylive", "subs": 410000, "avg_views_30d": 48000, "ctr": 3.4, "avd_seconds": 340, "upload_freq_per_week": 5.0, "overlap_score": 0.71 },
+      { "name": "SMB Capital", "channel_id": "UC_smbcapital", "subs": 380000, "avg_views_30d": 41000, "ctr": 4.1, "avd_seconds": 295, "upload_freq_per_week": 4.0, "overlap_score": 0.58 },
+      { "name": "Joe Burgoyne (OIC)", "channel_id": "UC_joeburgoyne", "subs": 165000, "avg_views_30d": 14000, "ctr": 3.2, "avd_seconds": 320, "upload_freq_per_week": 1.0, "overlap_score": 0.66 },
+      { "name": "Karsten Schaeffer", "channel_id": "UC_karstens", "subs": 142000, "avg_views_30d": 19000, "ctr": 4.6, "avd_seconds": 285, "upload_freq_per_week": 2.5, "overlap_score": 0.73 },
+      { "name": "OptionsPlay", "channel_id": "UC_optionsplay", "subs": 118000, "avg_views_30d": 11000, "ctr": 3.0, "avd_seconds": 260, "upload_freq_per_week": 3.0, "overlap_score": 0.61 },
+      { "name": "Wealthsimple Options", "channel_id": "UC_wealthsimple_opt", "subs": 95000, "avg_views_30d": 8400, "ctr": 2.9, "avd_seconds": 240, "upload_freq_per_week": 1.0, "overlap_score": 0.48 },
+      { "name": "The Trading Channel (Options)", "channel_id": "UC_tradingch_opt", "subs": 84000, "avg_views_30d": 9100, "ctr": 3.6, "avd_seconds": 270, "upload_freq_per_week": 2.0, "overlap_score": 0.55 }
+    ],
+    "keyword_gaps": [
+      { "keyword": "iron condor monthly income", "volume": 14800, "difficulty": 38, "gap_score": 0.86 },
+      { "keyword": "options income $1000 month", "volume": 9600, "difficulty": 32, "gap_score": 0.82 },
+      { "keyword": "iron condor real P&L", "volume": 4400, "difficulty": 24, "gap_score": 0.91 },
+      { "keyword": "iron condor strategy", "volume": 38500, "difficulty": 52, "gap_score": 0.74 },
+      { "keyword": "tax-aware options strategy", "volume": 3100, "difficulty": 21, "gap_score": 0.88 },
+      { "keyword": "options assignment what to do", "volume": 6800, "difficulty": 28, "gap_score": 0.79 },
+      { "keyword": "rolling a losing iron condor", "volume": 2900, "difficulty": 19, "gap_score": 0.93 },
+      { "keyword": "monthly options income breakdown", "volume": 5400, "difficulty": 26, "gap_score": 0.84 },
+      { "keyword": "iron condor SPX weekly", "volume": 7200, "difficulty": 34, "gap_score": 0.71 },
+      { "keyword": "credit spread vs iron condor", "volume": 11200, "difficulty": 36, "gap_score": 0.68 },
+      { "keyword": "iron condor adjustments", "volume": 8900, "difficulty": 31, "gap_score": 0.77 },
+      { "keyword": "first $1000 from options", "volume": 4100, "difficulty": 22, "gap_score": 0.86 },
+      { "keyword": "options income tax treatment", "volume": 3600, "difficulty": 25, "gap_score": 0.81 },
+      { "keyword": "iron condor for beginners", "volume": 12400, "difficulty": 41, "gap_score": 0.62 },
+      { "keyword": "selling iron condors weekly", "volume": 5100, "difficulty": 29, "gap_score": 0.78 },
+      { "keyword": "real options trading P&L", "volume": 6300, "difficulty": 27, "gap_score": 0.83 },
+      { "keyword": "iron condor max loss", "volume": 4800, "difficulty": 23, "gap_score": 0.81 },
+      { "keyword": "options income portfolio", "volume": 3800, "difficulty": 24, "gap_score": 0.79 },
+      { "keyword": "iron condor on SPY vs SPX", "volume": 2200, "difficulty": 18, "gap_score": 0.89 },
+      { "keyword": "monthly cash flow from options", "volume": 5900, "difficulty": 30, "gap_score": 0.75 }
+    ],
+    "per_video_brief": {
+      "target_video": "How I Made $14K Trading Options in October 2025 (Full Strategy Breakdown)",
+      "ranking_videos": [
+        { "title": "Iron Condor Strategy Explained (Step by Step)", "channel": "InTheMoney", "views": 412000, "ctr_estimate": 5.4, "weakness": "no real P&L, all whiteboard" },
+        { "title": "I Made $5,000 Selling Iron Condors", "channel": "Benjamin", "views": 287000, "ctr_estimate": 6.1, "weakness": "single-trade, not full month" },
+        { "title": "The PERFECT Iron Condor Setup", "channel": "Project Finance", "views": 156000, "ctr_estimate": 3.8, "weakness": "long and dense, no fills shown" },
+        { "title": "Iron Condor for Beginners | Full Guide", "channel": "tastylive", "views": 98000, "ctr_estimate": 3.2, "weakness": "tutorial framing, no real trades" },
+        { "title": "Iron Condor Adjustments When Wrong", "channel": "Karsten Schaeffer", "views": 64000, "ctr_estimate": 4.4, "weakness": "advanced-only, scares beginners" }
+      ],
+      "differentiation_angle": "Full-month real fills, named strikes, includes the one losing leg, ends with tax footprint. No top-5 competitor combines all four."
+    }
+  },
+  "downstream_consumers": ["keyword-researcher", "title-copywriter", "thumbnail-strategist", "chief-strategy-officer"],
+  "executed_at": "2026-05-17T14:01:02Z",
+  "duration_ms": 11240,
+  "status": "completed"
+}

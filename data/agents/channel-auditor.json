@@ -1,0 +1,60 @@
+{
+  "agent": "channel-auditor",
+  "team": "intelligence",
+  "phase": "onboarding",
+  "execution_order": 1,
+  "depends_on": [],
+  "prompt": "Audit AlphaTraderTV (UC_alphatradertv, 38,412 subs, 142 videos published, niche: stock/options/crypto trading education, target audience: beginner-to-intermediate retail traders US/CA/UK). Pull 90-day analytics: CTR, AVD, view velocity, subscriber delta, top/bottom performers, traffic source mix, thumbnail/title consistency, metadata hygiene, playlist coverage. Identify quick wins (<2 weeks) and structural issues (3-6 months). Sample 12 representative videos across topic clusters (options, equities, crypto, market recaps).",
+  "raw_output": "AlphaTraderTV is a mid-tier trading education channel with strong topical authority in options income strategies but suffering from inconsistent packaging and weak playlist architecture. Over the trailing 90 days the channel averaged 2.1% impression CTR (well below the 4-6% target band for finance-edu channels in this size cohort) and 4:12 average view duration on an average upload length of 11:30, yielding a 36.5% AVD ratio that is decent but not breakout-tier.\n\nThe subscriber base of 38,412 is growing at roughly 410 net subs/week, dominated by suggested-video traffic (47%) and browse features (23%), with search contributing only 14% — a red flag given the SEO-friendliness of the niche. Watch-time concentration is heavy: the top 8 videos drive 61% of total watch time, almost all options-income tutorials. Crypto content underperforms (1.3% CTR mean) and should be deprioritized or rebranded.\n\nThumbnail consistency is the single biggest quick win. 41% of thumbnails use stock-photo backgrounds with no facial expression, and text overlay exceeds 6 words on 28% of uploads. Title patterns are inconsistent — 60% lead with a dollar figure (good), but 22% bury the keyword past character 40 (bad for mobile truncation at ~50 chars). Descriptions average 380 characters with no timestamps on 67% of uploads longer than 8 minutes — a major chapter/SEO miss.\n\nStructurally, the channel has only 3 playlists, none of them keyword-targeted. There is no clear beginner funnel, no series branding, and no end-screen continuity strategy. Community tab is used 1.2x/week (target 3-4x). Shorts have been tested 11 times with mixed results — the 3 that worked all used a 'P&L screenshot reveal' hook.\n\nQuick wins identified: standardize thumbnail template (face + bold figure + 3-word overlay), add chapters to all videos >6min, refresh metadata on the top 20 evergreen uploads, launch a 'Beginner Options' playlist as a subscriber-conversion funnel, and rebrand crypto uploads under a separate playlist with adjusted thumbnails. Longer-term issues: lack of editorial calendar tied to seasonal market events (earnings, Fed, OPEX weeks), no community engagement cadence, no email/Discord retention loop.",
+  "structured_output": {
+    "health_score": 62,
+    "baseline_metrics": {
+      "ctr": 2.1,
+      "avd": "4:12",
+      "avd_seconds": 252,
+      "subs": 38412,
+      "view_velocity": 18420,
+      "watch_time_hours_30d": 41250,
+      "net_subs_per_week": 410,
+      "avg_upload_length_seconds": 690,
+      "avd_ratio": 0.365
+    },
+    "traffic_source_mix": {
+      "suggested": 47,
+      "browse": 23,
+      "search": 14,
+      "external": 8,
+      "playlist": 4,
+      "other": 4
+    },
+    "quick_wins": [
+      "Standardize thumbnail template: face + bold $-figure + ≤3 word overlay",
+      "Add chapters to all uploads >6:00 (currently missing on 67%)",
+      "Refresh metadata on top 20 evergreen options videos",
+      "Launch 'Beginner Options' playlist as subscriber funnel",
+      "Move keyword to first 40 characters of every title",
+      "Increase community-tab posting cadence to 3-4x/week"
+    ],
+    "long_term_issues": [
+      "No editorial calendar tied to market events (earnings/Fed/OPEX)",
+      "Crypto content drags channel CTR — needs sub-brand or sunset",
+      "No end-screen continuity / playlist binding strategy",
+      "Search traffic underweight (14%) for an SEO-favorable niche",
+      "No email or Discord retention loop converting viewers to community"
+    ],
+    "video_audit_sample": [
+      { "video_id": "vid_087", "title": "I Made $8200 Selling Puts Last Month", "ctr": 4.8, "avd_seconds": 318, "verdict": "top-performer, replicate format" },
+      { "video_id": "vid_103", "title": "Iron Condor Explained", "ctr": 3.2, "avd_seconds": 286, "verdict": "solid evergreen, refresh thumbnail" },
+      { "video_id": "vid_119", "title": "Why I Sold All My Bitcoin", "ctr": 1.1, "avd_seconds": 198, "verdict": "underperformer, off-niche" },
+      { "video_id": "vid_125", "title": "Options Trading for Beginners (Full Guide)", "ctr": 3.9, "avd_seconds": 412, "verdict": "evergreen anchor, pin to playlist" },
+      { "video_id": "vid_131", "title": "Market Recap October Week 2", "ctr": 1.7, "avd_seconds": 184, "verdict": "low evergreen value" },
+      { "video_id": "vid_138", "title": "$2k → $14k Options Challenge Update", "ctr": 5.4, "avd_seconds": 362, "verdict": "best format, build series" },
+      { "video_id": "vid_140", "title": "Tesla Earnings Play Breakdown", "ctr": 2.9, "avd_seconds": 244, "verdict": "good seasonal, repackage yearly" },
+      { "video_id": "vid_142", "title": "How I Read Options Flow", "ctr": 3.6, "avd_seconds": 301, "verdict": "evergreen, add to beginner playlist" }
+    ]
+  },
+  "downstream_consumers": ["brand-voice-specialist", "niche-intelligence-analyst", "audience-persona-builder", "competitor-analyst", "chief-strategy-officer"],
+  "executed_at": "2026-05-17T14:00:12Z",
+  "duration_ms": 8421,
+  "status": "completed"
+}

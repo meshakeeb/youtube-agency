@@ -1,0 +1,37 @@
+{
+  "agent": "performance-analyst",
+  "team": "growth",
+  "phase": "monitoring",
+  "execution_order": 18,
+  "depends_on": ["quality-controller", "community-engagement-strategist", "cross-platform-repurposing-agent", "playlist-architect"],
+  "prompt": "Run the weekly performance pass for AlphaTraderTV covering the seven days ending 2026-05-16, including the first 96 hours of the iron condor October P&L video. Surface CTR/AVD/sub-velocity deltas vs baseline, top/bottom video, flagged anomalies, and recommended actions for the upcoming week.",
+  "raw_output": "Week-over-week, CTR is up from 2.1% baseline to 3.4% (lift driven almost entirely by the new thumbnail template). AVD is up from 4:12 to 4:38 thanks to the chapter rollout on the back catalog. Subscriber velocity is up to 1,180 net subs/week — nearly 3x the pre-engagement baseline. The iron condor October P&L video is the week's top performer at 38,400 views in 96 hours with a 6.4% CTR — at the top of the title-copywriter's estimate band.\n\nThe community-tab poll attached to the video pulled 1,840 votes (best-ever response on this channel). The TSLA-blowup Short hit 142k views in 72 hours and is the clearest evidence that the loss-honesty positioning is converting on cold traffic. Bottom video this week is an old crypto upload (vid_119, 'Why I Sold All My Bitcoin') which continues to drag — recommend unlisting or moving off the main channel as part of the crypto sunset.\n\nFlagged anomalies: the Tuesday 14:00 publish slot outperformed Thursday slots by 22% on first-24h views — recommend locking Tuesday/Friday cadence. NVDA-related back-catalog videos saw a 38% impression spike (likely an earnings-driven suggested-feed effect) — recommend metadata refresh on top 3 NVDA videos this week to harvest.",
+  "structured_output": {
+    "week_ending": "2026-05-16",
+    "weekly_summary": {
+      "ctr_change": { "from": 2.1, "to": 3.4, "delta_pp": 1.3 },
+      "avd_change": { "from": "4:12", "to": "4:38", "delta_seconds": 26 },
+      "sub_velocity": { "net_subs_this_week": 1180, "wow_change_pct": 187 },
+      "top_video": { "title": "How I Made $14K With Iron Condors in October (Real P&L)", "views_96h": 38400, "ctr": 6.4, "avd_seconds": 352 },
+      "bottom_video": { "title": "Why I Sold All My Bitcoin", "video_id": "vid_119", "views_7d": 240, "ctr": 1.0 }
+    },
+    "flagged_videos": [
+      { "video_id": "vid_119", "title": "Why I Sold All My Bitcoin", "issue": "Dragging channel CTR; off-niche", "action": "Unlist or move to crypto sub-brand decision queue" },
+      { "video_id": "vid_141", "title": "NVDA Earnings Recap July", "issue": "Impression spike (+38%) but stale title", "action": "Metadata refresh, new thumbnail" }
+    ],
+    "recommended_actions": [
+      "Lock Tuesday/Friday publish slots — Tuesday 14:00 outperforms Thursday by 22%",
+      "Metadata refresh top 3 NVDA back-catalog videos this week",
+      "Publish the TSLA-blowup post-mortem next Tuesday (cold-traffic Short demand validated)",
+      "Add 'Monthly Options Income' playlist link to last 12 video descriptions",
+      "Sunset crypto vid_119; add to deletion queue pending CEO crypto-sub-brand decision"
+    ],
+    "escalations": [
+      "Subscriber velocity is +187% WoW — recommend tightening Q1 quarterly target upward by 8-10%"
+    ]
+  },
+  "downstream_consumers": ["chief-strategy-officer", "client-reporting-agent"],
+  "executed_at": "2026-05-17T14:03:24Z",
+  "duration_ms": 6210,
+  "status": "completed"
+}
