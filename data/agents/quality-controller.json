@@ -1,0 +1,38 @@
+{
+  "agent": "quality-controller",
+  "team": "production",
+  "phase": "production",
+  "execution_order": 14,
+  "depends_on": ["title-copywriter", "description-writer", "tags-hashtag-specialist", "chapter-architect", "thumbnail-strategist", "brand-voice-specialist"],
+  "prompt": "Run the production QC gate on the iron condor October P&L video package. Score against keyword placement, brand voice compliance, structural integrity (chapters, hashtags, tag budget), CTR potential, and compliance disclaimer. Decide APPROVED or RETURNED with revision notes.",
+  "raw_output": "Package passes all gates. Title delivers primary keyword inside the first 40 characters, leads with the dollar figure, stays under 60 chars, and matches brand voice. Description carries the primary keyword in the first 150 chars, integrates the long-tail 'monthly options income' three times in body, includes complete chapter timestamps, and closes with a plain-English compliance disclaimer. Tags fit the 312/500 char budget with the primary keyword first. Hashtag set is 5 entries with IronCondor first for mobile rendering. Chapters cover the hook in under 90s, embed the primary keyword in three chapter titles, and total 19:00 matching the planned runtime. Thumbnail spec meets brand template, mobile 240px legibility, and color contrast.\n\nNo revisions required. Score breakdown: keyword 96, brand voice 94, structure 97, CTR potential 92 — composite 94.7 (rounds to 95). Decision: APPROVED for publish. Recommend publish window Tuesday 14:00 client time to hit the post-market evening watch session for the Marcus persona.",
+  "structured_output": {
+    "quality_score": 95,
+    "breakdown": {
+      "keyword": 96,
+      "brand_voice": 94,
+      "structure": 97,
+      "ctr_potential": 92
+    },
+    "decision": "APPROVED",
+    "revision_notes": [],
+    "publish_window_recommendation": "Tuesday 14:00 client-time (post-market, pre-evening watch session)",
+    "checks_passed": [
+      "Primary keyword in first 40 chars of title",
+      "Primary keyword in first 150 chars of description",
+      "Long-tail keyword density target met",
+      "Chapter timestamps complete and sequential",
+      "Hook chapter under 90 seconds",
+      "Tag count 8-12 and char budget under 500",
+      "Hashtag count 3-5 with primary differentiator first",
+      "Thumbnail mobile 240px legibility",
+      "Plain-English compliance disclaimer present",
+      "Brand voice: no hype, no guaranteed-returns language"
+    ],
+    "checks_failed": []
+  },
+  "downstream_consumers": ["community-engagement-strategist", "cross-platform-repurposing-agent", "playlist-architect", "performance-analyst"],
+  "executed_at": "2026-05-17T14:02:51Z",
+  "duration_ms": 5680,
+  "status": "completed"
+}

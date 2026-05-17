@@ -1,0 +1,43 @@
+{
+  "agent": "tags-hashtag-specialist",
+  "team": "production",
+  "phase": "production",
+  "execution_order": 11,
+  "depends_on": ["keyword-researcher", "description-writer", "brand-voice-specialist"],
+  "prompt": "Generate the YouTube tag list (8-12 tags, total char budget 460/500) and the in-description hashtag set (3-5 hashtags in priority order) for the iron condor October P&L video. Lead with primary keyword and high-value long-tails.",
+  "raw_output": "Tag strategy mixes the primary keyword, ranked long-tails from the gap analysis, and a small set of brand/topical anchors. All tags are exact-match phrases from real search data; no junk synonyms. Total character count is 312 — well under the 500 cap, leaving room if QC wants to add 1-2 more during review. Hashtag set prioritizes the primary differentiator ('IronCondor') first because YouTube uses the first three hashtags above the title on mobile, and Marcus-the-Operator's primary device is mobile during lunch sessions.",
+  "structured_output": {
+    "tags": [
+      "iron condor strategy",
+      "iron condor monthly income",
+      "monthly options income",
+      "iron condor real p&l",
+      "options income breakdown",
+      "iron condor adjustments",
+      "selling iron condors weekly",
+      "iron condor spx",
+      "options strategy for income",
+      "alphatradertv"
+    ],
+    "char_count_total": 312,
+    "char_count_per_tag": [21, 27, 22, 20, 25, 21, 26, 16, 26, 14],
+    "hashtags": [
+      "#IronCondor",
+      "#OptionsIncome",
+      "#OptionsTrading",
+      "#MonthlyIncome",
+      "#AlphaTraderTV"
+    ],
+    "hashtag_priority_rationale": "IronCondor first — YouTube renders top-3 hashtags above mobile title; primary differentiator wins click on mobile lunch-session traffic.",
+    "compliance_checks": {
+      "tag_count_within_8_to_12": true,
+      "hashtag_count_within_3_to_5": true,
+      "char_budget_under_500": true,
+      "primary_keyword_first": true
+    }
+  },
+  "downstream_consumers": ["quality-controller", "description-writer"],
+  "executed_at": "2026-05-17T14:02:26Z",
+  "duration_ms": 3940,
+  "status": "completed"
+}

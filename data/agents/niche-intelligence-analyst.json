@@ -1,0 +1,55 @@
+{
+  "agent": "niche-intelligence-analyst",
+  "team": "intelligence",
+  "phase": "onboarding",
+  "execution_order": 3,
+  "depends_on": ["channel-auditor"],
+  "prompt": "Map the YouTube trading-education niche for AlphaTraderTV (stocks + options + crypto, beginner-to-intermediate, US-centric). Identify the top 10 channels driving the niche, dominant vocabulary, trending angles in the last 90 days, seasonal patterns tied to market events, and content gaps where AlphaTraderTV can win.",
+  "raw_output": "The YouTube trading-education niche splits into three loosely-overlapping camps: personal-finance lifestyle (Graham Stephan, Andrei Jikh), tactical-execution traders (Benjamin, Bryce Paul, Adam Khoo), and pure crypto (Coin Bureau, Benjamin Cowen). AlphaTraderTV sits closest to the tactical-execution cluster but with stronger options specialization than most.\n\nThe top of the niche is dominated by lifestyle channels with 3-6M subs that prioritize broad relatability over execution depth. Below them, the 300k-1.5M tier (Benjamin, Adam Khoo, InTheMoney, Bryce Paul) competes on specificity — real fills, real P&L, named strikes. This is the band AlphaTraderTV is climbing toward, and it's the right reference cohort.\n\nDominant niche vocabulary clusters around income strategies ('wheel strategy', 'iron condor', 'covered calls', 'cash-secured puts'), market structure ('OPEX', 'gamma squeeze', 'unusual options activity'), and lifestyle proof ('monthly income', 'quit my job', 'options for beginners'). Trending angles the last 90 days: 0DTE options (massive growth Jan-Apr 2026), AI-stock plays (NVDA/AVGO derivatives), and rate-cut positioning. 0DTE specifically is up ~340% in search volume YoY but is dangerous brand territory.\n\nSeasonal patterns are strong and underexploited: tax season (Feb-Apr) spikes 'capital gains', 'tax loss harvesting', 'Roth IRA options' queries; earnings seasons (Jan/Apr/Jul/Oct) spike single-name strategy searches; OPEX weeks spike 'gamma' and 'pin risk' queries; Fed weeks spike 'rate cut trade' searches. AlphaTraderTV currently publishes flat — no calendar alignment.\n\nGap observations: (1) almost no channel covers iron-condor monthly P&L with real fills and named strikes; (2) the 'first $1k month from options' beginner-funnel video is missing across the top 10; (3) tax-aware options content is virtually empty space; (4) post-mortem 'I lost money this week' content has high engagement but low supply.",
+  "structured_output": {
+    "niche": "Trading Education — Options Income, Equities, Crypto (US, beginner-to-intermediate)",
+    "niche_size_estimate": { "monthly_searches": 18400000, "active_channels": 1240, "competitive_intensity": "medium-high" },
+    "top_channels": [
+      { "name": "Graham Stephan", "subs": 4900000, "niche_share": 8.2, "focus": "personal finance lifestyle" },
+      { "name": "Andrei Jikh", "subs": 2300000, "niche_share": 4.1, "focus": "dividend + crypto lifestyle" },
+      { "name": "Benjamin", "subs": 1450000, "niche_share": 5.6, "focus": "tactical options + equities" },
+      { "name": "Adam Khoo", "subs": 1100000, "niche_share": 3.9, "focus": "swing trading + technicals" },
+      { "name": "InTheMoney", "subs": 980000, "niche_share": 4.4, "focus": "options strategies" },
+      { "name": "Bryce Paul (Crypto 101)", "subs": 760000, "niche_share": 2.7, "focus": "crypto education" },
+      { "name": "Coin Bureau", "subs": 2400000, "niche_share": 5.1, "focus": "crypto research" },
+      { "name": "Benjamin Cowen", "subs": 820000, "niche_share": 2.4, "focus": "crypto on-chain analysis" },
+      { "name": "Project Finance", "subs": 540000, "niche_share": 2.9, "focus": "options mechanics deep dives" },
+      { "name": "tastylive", "subs": 410000, "niche_share": 3.1, "focus": "options strategy education" }
+    ],
+    "vocabulary": [
+      "wheel strategy", "iron condor", "covered calls", "cash-secured puts", "credit spread", "debit spread",
+      "OPEX", "gamma squeeze", "unusual options activity", "0DTE", "theta decay", "IV rank", "IV crush",
+      "monthly income", "options for beginners", "rate cut trade", "earnings play", "pin risk", "delta hedging"
+    ],
+    "trending_angles": [
+      { "angle": "0DTE options", "yoy_growth_pct": 340, "risk_level": "high", "brand_fit": "caution" },
+      { "angle": "AI-stock options plays (NVDA/AVGO)", "yoy_growth_pct": 180, "risk_level": "medium", "brand_fit": "good" },
+      { "angle": "Rate-cut positioning trades", "yoy_growth_pct": 95, "risk_level": "low", "brand_fit": "excellent" },
+      { "angle": "Monthly income breakdowns with real P&L", "yoy_growth_pct": 62, "risk_level": "low", "brand_fit": "excellent" },
+      { "angle": "Tax-aware options strategies", "yoy_growth_pct": 41, "risk_level": "low", "brand_fit": "excellent" }
+    ],
+    "seasonal_patterns": [
+      { "period": "Feb-Apr (tax season)", "search_spikes": ["capital gains", "tax loss harvesting", "Roth IRA options"] },
+      { "period": "Jan/Apr/Jul/Oct (earnings)", "search_spikes": ["earnings play", "single-name options", "earnings IV crush"] },
+      { "period": "OPEX weeks (3rd Fri monthly)", "search_spikes": ["gamma squeeze", "pin risk", "OPEX positioning"] },
+      { "period": "Fed weeks (8x/year)", "search_spikes": ["rate cut trade", "FOMC options", "Fed week strategy"] },
+      { "period": "Dec (year-end)", "search_spikes": ["santa rally", "year-end portfolio", "tax-loss selling"] }
+    ],
+    "gap_observations": [
+      "Monthly iron-condor P&L with real fills is largely empty space",
+      "'First $1k month from options' beginner-funnel video missing across top 10",
+      "Tax-aware options content nearly non-existent",
+      "Post-mortem loss-week content has high engagement, low supply",
+      "Fed-week positioning playbook content is fragmented and surface-level"
+    ]
+  },
+  "downstream_consumers": ["competitor-analyst", "keyword-researcher", "chief-strategy-officer", "playlist-architect"],
+  "executed_at": "2026-05-17T14:00:35Z",
+  "duration_ms": 9842,
+  "status": "completed"
+}

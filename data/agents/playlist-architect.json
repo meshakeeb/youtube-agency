@@ -1,0 +1,78 @@
+{
+  "agent": "playlist-architect",
+  "team": "growth",
+  "phase": "growth",
+  "execution_order": 17,
+  "depends_on": ["quality-controller", "niche-intelligence-analyst", "chief-strategy-officer"],
+  "prompt": "Design the playlist architecture for AlphaTraderTV (the channel currently has only 3 unstructured playlists). Recommend 6 keyword-targeted playlists, an end-screen strategy, and per-video placement and end-card recommendations for the iron condor October P&L video.",
+  "raw_output": "Six playlists cover the three primary search lanes (Beginner Options, Monthly Income, Earnings Plays) plus three secondary lanes (Iron Condor Deep Dive, Risk Management, Market Recaps). Each playlist title is a high-volume keyword phrase to capture YouTube search and playlist-tab traffic. End-screen strategy follows a 'one continuation video + one playlist' pattern: the continuation goes to the most-watched-next video from the same persona cohort, the playlist routes to a related evergreen series.\n\nFor the iron condor October P&L video specifically, primary placement is at the top of the 'Monthly Options Income' playlist and as #4 in 'Iron Condor Deep Dive' (after the three foundational explainers). End cards point to the 'What is an Iron Condor?' beginner explainer (highest semantic match for cold viewers who clicked through from suggested) and the 'Monthly Options Income' playlist.",
+  "structured_output": {
+    "channel_architecture": {
+      "playlists": [
+        {
+          "title": "Beginner Options: Start Here",
+          "target_keyword": "options trading for beginners",
+          "search_volume": 33000,
+          "purpose": "Subscriber funnel — convert browse traffic to series watchers",
+          "target_video_count": 12,
+          "ordering": "linear, easiest to hardest"
+        },
+        {
+          "title": "Monthly Options Income",
+          "target_keyword": "monthly options income",
+          "search_volume": 18600,
+          "purpose": "Topical authority + returning-viewer binge sessions",
+          "target_video_count": 18,
+          "ordering": "reverse chronological"
+        },
+        {
+          "title": "Earnings & Event Trades",
+          "target_keyword": "earnings options strategy",
+          "search_volume": 11400,
+          "purpose": "Seasonal capture during earnings weeks",
+          "target_video_count": 10,
+          "ordering": "by event recency"
+        },
+        {
+          "title": "Iron Condor Deep Dive",
+          "target_keyword": "iron condor strategy",
+          "search_volume": 38500,
+          "purpose": "Primary-keyword authority cluster",
+          "target_video_count": 8,
+          "ordering": "concept → setup → adjustments → real trades"
+        },
+        {
+          "title": "Risk Management & Position Sizing",
+          "target_keyword": "options risk management",
+          "search_volume": 6900,
+          "purpose": "Trust-build + long AVD",
+          "target_video_count": 6,
+          "ordering": "linear pedagogical"
+        },
+        {
+          "title": "Weekly Market Recaps",
+          "target_keyword": "weekly market recap",
+          "search_volume": 9200,
+          "purpose": "Recurrence loop — habit-forming subscribers",
+          "target_video_count": 0,
+          "ordering": "reverse chronological, rolling"
+        }
+      ]
+    },
+    "end_screen_strategy": "One continuation video (highest semantic next-watch match) + one playlist (related evergreen). 20-second end-screen window. No 'subscribe' button — replaced by the playlist CTA which historically out-performs.",
+    "per_video_note": {
+      "target_playlists": [
+        { "playlist": "Monthly Options Income", "position": 1 },
+        { "playlist": "Iron Condor Deep Dive", "position": 4 }
+      ],
+      "recommended_end_cards": [
+        { "type": "video", "target": "What is an Iron Condor? (Full Explainer)", "rationale": "Cold-viewer semantic match" },
+        { "type": "playlist", "target": "Monthly Options Income", "rationale": "Returning-viewer binge route" }
+      ]
+    }
+  },
+  "downstream_consumers": ["client-reporting-agent", "performance-analyst", "chief-strategy-officer"],
+  "executed_at": "2026-05-17T14:03:16Z",
+  "duration_ms": 6420,
+  "status": "completed"
+}

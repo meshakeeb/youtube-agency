@@ -1,0 +1,51 @@
+{
+  "agent": "client-reporting-agent",
+  "team": "operations",
+  "phase": "monitoring",
+  "execution_order": 19,
+  "depends_on": ["performance-analyst", "chief-strategy-officer", "ceo"],
+  "prompt": "Generate the weekly pulse report (delivered Monday 09:00 client time) and the monthly deep-dive (first Tuesday) for AlphaTraderTV. Voice should be confident, numeric, plain-English. The client (Alex, channel owner) cares about subs, CTR, AVD, and whether the plan is working.",
+  "raw_output": "Weekly pulse leads with the three numbers that matter and a one-line status verdict. Plan is working — CTR has jumped from 2.1% to 3.4% in one week, subscriber velocity tripled, and the October P&L video is the channel's best-ever 96-hour launch by every metric. The deep-dive layers in baseline-vs-current, three wins, three honest concerns, and a preview of next month's plan with the explicit Q1 target update from the CEO based on accelerated velocity.\n\nThe report deliberately leaves out vanity metrics (total impressions, raw view count) and instead anchors on the CTR/AVD/velocity triad plus one qualitative observation per section. Alex is operator-brained; this is the format he can act on.",
+  "structured_output": {
+    "weekly_pulse": {
+      "for_week_ending": "2026-05-16",
+      "status": "ON TRACK — AHEAD OF PLAN",
+      "top_3_numbers": [
+        { "metric": "CTR", "value": "3.4%", "delta": "+1.3pp WoW", "vs_target": "ahead of 3.5% Q1 target" },
+        { "metric": "AVD", "value": "4:38", "delta": "+0:26 WoW", "vs_target": "tracking to 4:45 Q1 target" },
+        { "metric": "Net new subs", "value": "1,180", "delta": "+187% WoW", "vs_target": "3x baseline run-rate" }
+      ],
+      "headline": "October P&L video is the channel's best-ever 96-hour launch — 6.4% CTR, 38,400 views, 1,840-vote poll response.",
+      "next_action": "Publish the TSLA-blowup post-mortem next Tuesday. Refresh NVDA back-catalog metadata this week."
+    },
+    "monthly_deep_dive": {
+      "for_month": "2026-05",
+      "metrics_vs_baseline": {
+        "ctr": { "baseline": 2.1, "current": 3.4, "target": 3.5, "status": "near-target" },
+        "avd_seconds": { "baseline": 252, "current": 278, "target": 285, "status": "near-target" },
+        "subs": { "baseline": 38412, "current": 41940, "target_q1": 55000, "status": "on-track" },
+        "view_velocity": { "baseline": 18420, "current": 27800, "delta_pct": 51, "status": "ahead" }
+      },
+      "top_wins": [
+        "Iron condor October P&L launched at 6.4% CTR — best ever for the channel",
+        "New thumbnail template lifted channel CTR from 2.1% to 3.4% in 30 days",
+        "TSLA-blowup Short hit 142k views in 72 hours; loss-honesty positioning validated"
+      ],
+      "top_concerns": [
+        "Crypto back-catalog still dragging average CTR — recommend formal sunset decision",
+        "Search-traffic share unchanged at 14% despite SEO improvements — investigate descriptions",
+        "Community-tab cadence still at 1.8x/week vs 3-4x target"
+      ],
+      "next_month_preview": {
+        "themes": ["Q1 continues: Real Monthly Income", "Earnings season prep — first 3 videos on earnings options strategy"],
+        "publish_plan_video_count": 10,
+        "shorts_plan_count": 16,
+        "quarterly_target_update": "Q1 sub target raised from 55,000 to 60,000 based on velocity (CEO approved)"
+      }
+    }
+  },
+  "downstream_consumers": ["ceo", "chief-strategy-officer"],
+  "executed_at": "2026-05-17T14:03:32Z",
+  "duration_ms": 5480,
+  "status": "completed"
+}

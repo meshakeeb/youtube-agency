@@ -1,0 +1,33 @@
+{
+  "agent": "community-engagement-strategist",
+  "team": "growth",
+  "phase": "growth",
+  "execution_order": 15,
+  "depends_on": ["quality-controller", "brand-voice-specialist", "audience-persona-builder"],
+  "prompt": "Build the community engagement package for the iron condor October P&L video: pinned comment, community-tab post launching the day of publish, and 3 in-video CTA hooks. Voice must match brand. Marcus persona reads comments often but rarely posts.",
+  "raw_output": "The pinned comment doubles down on the differentiator — names the losing trade and previews the November plan — to start the comment thread with substance rather than CTAs. The community-tab post drops on publish day with a poll: most of the audience won't comment but will vote, which surfaces engagement to the algorithm cheaply. The three in-video CTA hooks are positioned at retention soft-spots (3:00, 9:15, 17:00) and ask for a specific reply, not a generic 'subscribe'.",
+  "structured_output": {
+    "pinned_comment": "Quick notes on the TSLA trade at 9:15 — I rolled the call side too late. If I'd adjusted on the Wednesday before earnings instead of Friday morning, that's a $1,200 swing. November plan: sitting out the first FOMC week and running condors on SPX every other Friday. Drop your November questions below — I'll answer the top 10 in next week's video.",
+    "community_post": {
+      "type": "poll",
+      "body": "October P&L is live. Quick question while you watch: what's the biggest reason you HAVEN'T sold iron condors yet?\n• Don't understand the setup\n• Scared of the max loss\n• Don't have enough capital\n• I already do — show me adjustments",
+      "publish_offset_minutes": 0,
+      "follow_up_post_offset_hours": 48,
+      "follow_up_body": "Top reason on the poll was 'scared of max loss'. Next week's video walks through exactly how I size every condor so the max loss is a number I can stomach. Drop your account size in the comments and I'll work an example for the median number."
+    },
+    "in_video_hooks": [
+      { "timestamp": "3:00", "cta": "If you've never placed an iron condor before, comment 'condor 101' and I'll pin a free setup checklist." },
+      { "timestamp": "9:15", "cta": "Quick interruption — this is the trade that broke. Want the full post-mortem as its own video? Comment 'TSLA breakdown'." },
+      { "timestamp": "17:00", "cta": "November plan in the description. Tell me which week YOU'RE sitting out and why." }
+    ],
+    "compliance_checks": {
+      "brand_voice_match": true,
+      "no_subscribe_smash_language": true,
+      "specific_response_ask": true
+    }
+  },
+  "downstream_consumers": ["client-reporting-agent", "performance-analyst"],
+  "executed_at": "2026-05-17T14:03:00Z",
+  "duration_ms": 4880,
+  "status": "completed"
+}

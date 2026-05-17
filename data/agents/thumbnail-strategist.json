@@ -1,0 +1,39 @@
+{
+  "agent": "thumbnail-strategist",
+  "team": "production",
+  "phase": "production",
+  "execution_order": 13,
+  "depends_on": ["title-copywriter", "audience-persona-builder", "brand-voice-specialist", "competitor-analyst"],
+  "prompt": "Design the thumbnail spec for 'How I Made $14K With Iron Condors in October (Real P&L)'. Use brand template (face + bold $-figure + ≤3-word overlay). Define layout, text, colors with hex, expression, mobile legibility, and one A/B variant.",
+  "raw_output": "Primary thumbnail centers a tight mid-shot of the host on the right two-thirds of the frame, looking slightly off-camera with a focused 'I just closed the books' expression — not smiling, not grim, the trader-after-a-good-month look. Left third holds a stacked layout: huge yellow '$14,212' on the top line and a 3-word overlay 'IRON CONDOR MONTH' beneath. Background is a desaturated cool-blue gradient with a faint candlestick overlay at 8% opacity — niche-coded but not noisy. Color palette is brand-locked.\n\nMobile legibility passes the 240px test: the $-figure remains readable, the overlay text remains readable, the face remains identifiable as a person at thumbnail size. Color contrast ratio between yellow and the blue gradient is 7.8:1 — well above WCAG AA. No emoji, no arrows, no red circles — those are repellents for Marcus and visual noise on a TV.\n\nA/B variant swaps the strategy framing for the outcome framing: same face, same yellow $-figure, but the overlay becomes 'REAL P&L' instead of 'IRON CONDOR MONTH'. The hypothesis is the keyword version wins on suggested/browse impressions while the outcome version wins on returning subscribers who don't need the keyword cue.",
+  "structured_output": {
+    "layout": "Face right two-thirds (mid-shot), stacked text left third — $-figure top, 3-word overlay below. Subtle candlestick overlay at 8% opacity.",
+    "text_overlay": "IRON CONDOR MONTH",
+    "text_overlay_word_count": 3,
+    "dollar_figure": "$14,212",
+    "color_palette": [
+      { "role": "primary text", "hex": "#FFD60A", "name": "Signal Yellow" },
+      { "role": "background", "hex": "#0B2545", "name": "Deep Navy" },
+      { "role": "accent", "hex": "#13C296", "name": "Operator Green" }
+    ],
+    "facial_expression": "Focused, slight forward lean, mouth closed — 'I just closed the books' look. Not smiling, not grim.",
+    "mobile_check_notes": "Passes 240px legibility — $-figure and 3-word overlay remain readable. Contrast ratio yellow-on-navy 7.8:1 (WCAG AAA). No emoji, no arrows, no red circles.",
+    "ab_variant": {
+      "label": "B",
+      "text_overlay": "REAL P&L",
+      "hypothesis": "Outcome framing wins on returning-subscriber impressions; keyword framing wins on cold suggested. Run 5-day split.",
+      "all_other_elements": "identical to primary"
+    },
+    "compliance_checks": {
+      "text_under_5_words": true,
+      "face_present": true,
+      "mobile_240px_legible": true,
+      "brand_palette_used": true,
+      "no_clickbait_repellents": true
+    }
+  },
+  "downstream_consumers": ["quality-controller", "cross-platform-repurposing-agent"],
+  "executed_at": "2026-05-17T14:02:42Z",
+  "duration_ms": 6120,
+  "status": "completed"
+}
