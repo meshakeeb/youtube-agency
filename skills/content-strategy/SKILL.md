@@ -1,11 +1,7 @@
 ---
 name: content-strategy
 slug: content-strategy
-description: >
-  Use this skill when building or adjusting a client's overall content strategy.
-  Covers content calendar design, topic pipeline planning, niche positioning,
-  workflow orchestration across teams, and strategy review based on performance
-  data. Used by the Chief Strategy Officer to direct all client engagement work.
+description: Use this skill when building or adjusting a client's overall content strategy. Covers content calendar design, topic pipeline planning, niche positioning, workflow orchestration across teams, and strategy review based on performance data. Used by the Chief Strategy Officer to direct all client engagement work.
 tags:
   - leadership
   - strategy

@@ -1,12 +1,7 @@
 ---
 name: community-engagement-design
 slug: community-engagement-design
-description: >
-  Use this skill when designing the post-publish engagement layer for a YouTube
-  video. Covers pinned comment scripts, YouTube Community post copy, and
-  in-video verbal engagement hooks. Engagement signals (likes, comments, shares)
-  account for 15% of YouTube's ranking signal. Activates immediately after
-  every video is published.
+description: Use this skill when designing the post-publish engagement layer for a YouTube video. Covers pinned comment scripts, YouTube Community post copy, and in-video verbal engagement hooks. Engagement signals (likes, comments, shares) account for 15% of YouTube's ranking signal. Activates immediately after every video is published.
 tags:
   - growth
   - engagement

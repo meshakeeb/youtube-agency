@@ -1,11 +1,7 @@
 ---
 name: niche-mapping
 slug: niche-mapping
-description: >
-  Use this skill when building or refreshing a Niche Intelligence Profile for a
-  client. Covers niche ecosystem mapping, top channel identification, niche
-  vocabulary extraction, trend analysis, and content gap identification. Must
-  run before any production work begins for a new client or new content direction.
+description: Use this skill when building or refreshing a Niche Intelligence Profile for a client. Covers niche ecosystem mapping, top channel identification, niche vocabulary extraction, trend analysis, and content gap identification. Must run before any production work begins for a new client or new content direction.
 tags:
   - intelligence
   - research

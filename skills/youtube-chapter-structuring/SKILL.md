@@ -1,13 +1,7 @@
 ---
 name: youtube-chapter-structuring
 slug: youtube-chapter-structuring
-description: >
-  Use this skill when designing video chapters and timestamps. Takes the video
-  summary or script outline and the Keyword Brief as inputs. Chapters must
-  start at 0:00, contain a minimum of 3 segments, use keyword-rich titles,
-  and be formatted for direct paste into YouTube descriptions. Chapters appear
-  in Google search as rich snippets — this is an external discovery tool, not
-  just a navigation aid.
+description: Use this skill when designing video chapters and timestamps. Takes the video summary or script outline and the Keyword Brief as inputs. Chapters must start at 0:00, contain a minimum of 3 segments, use keyword-rich titles, and be formatted for direct paste into YouTube descriptions. Chapters appear in Google search as rich snippets — this is an external discovery tool, not just a navigation aid.
 tags:
   - production
   - chapters

@@ -1,12 +1,7 @@
 ---
 name: audience-research
 slug: audience-research
-description: >
-  Use this skill when building an Audience Persona Card for a client. Covers
-  viewer knowledge level classification, intent mapping, click trigger
-  identification, language rules, and platform behavior profiling. Takes the
-  Niche Intelligence Profile as input. Output is mandatory for the Title
-  Copywriter and Thumbnail Strategist before any production begins.
+description: Use this skill when building an Audience Persona Card for a client. Covers viewer knowledge level classification, intent mapping, click trigger identification, language rules, and platform behavior profiling. Takes the Niche Intelligence Profile as input. Output is mandatory for the Title Copywriter and Thumbnail Strategist before any production begins.
 tags:
   - intelligence
   - audience

@@ -1,12 +1,7 @@
 ---
 name: youtube-title-writing
 slug: youtube-title-writing
-description: >
-  Use this skill when writing optimized YouTube video titles. Takes the Keyword
-  Brief, Brand Voice Profile, and Audience Persona Card as mandatory inputs.
-  Produces 3 title alternatives per video — primary recommendation plus two
-  variants. Titles must balance CTR appeal with keyword placement in the first
-  50 characters. Never write titles without all three inputs confirmed.
+description: Use this skill when writing optimized YouTube video titles. Takes the Keyword Brief, Brand Voice Profile, and Audience Persona Card as mandatory inputs. Produces 3 title alternatives per video — primary recommendation plus two variants. Titles must balance CTR appeal with keyword placement in the first 50 characters. Never write titles without all three inputs confirmed.
 tags:
   - production
   - titles

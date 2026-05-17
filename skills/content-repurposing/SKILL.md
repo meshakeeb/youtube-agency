@@ -1,12 +1,7 @@
 ---
 name: content-repurposing
 slug: content-repurposing
-description: >
-  Use this skill when repurposing a long-form YouTube video into platform-specific
-  content. Produces Shorts scripts, Twitter/X threads, LinkedIn posts, Instagram
-  captions, and Telegram/Discord announcements per video. Each platform output
-  is adapted in tone and format while maintaining the client's brand voice.
-  Activates after every video publish to maximize content ROI.
+description: Use this skill when repurposing a long-form YouTube video into platform-specific content. Produces Shorts scripts, Twitter/X threads, LinkedIn posts, Instagram captions, and Telegram/Discord announcements per video. Each platform output is adapted in tone and format while maintaining the client's brand voice. Activates after every video publish to maximize content ROI.
 tags:
   - growth
   - repurposing

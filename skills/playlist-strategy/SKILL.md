@@ -1,12 +1,7 @@
 ---
 name: playlist-strategy
 slug: playlist-strategy
-description: >
-  Use this skill when designing or updating a client's playlist structure,
-  internal linking strategy (end screens and cards), and channel architecture.
-  Maximizes session watch time by grouping videos into logical clusters and
-  designing handoff flows between videos. Runs at onboarding and quarterly
-  thereafter.
+description: Use this skill when designing or updating a client's playlist structure, internal linking strategy (end screens and cards), and channel architecture. Maximizes session watch time by grouping videos into logical clusters and designing handoff flows between videos. Runs at onboarding and quarterly thereafter.
 tags:
   - growth
   - playlists

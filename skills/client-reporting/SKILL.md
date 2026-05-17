@@ -1,12 +1,7 @@
 ---
 name: client-reporting
 slug: client-reporting
-description: >
-  Use this skill when generating weekly pulse reports or monthly deep-dive
-  reports for active clients. Aggregates data from the Performance Analyst
-  and Growth Team. Reports must translate data into a clear narrative showing
-  what changed, why, and what is planned next. Client retention depends on
-  the clarity and confidence of these reports.
+description: Use this skill when generating weekly pulse reports or monthly deep-dive reports for active clients. Aggregates data from the Performance Analyst and Growth Team. Reports must translate data into a clear narrative showing what changed, why, and what is planned next. Client retention depends on the clarity and confidence of these reports.
 tags:
   - operations
   - reporting

@@ -1,12 +1,7 @@
 ---
 name: youtube-analytics-review
 slug: youtube-analytics-review
-description: >
-  Use this skill when reviewing YouTube Analytics data for a client channel.
-  Covers CTR benchmarking, AVD interpretation, view velocity tracking,
-  subscriber growth analysis, and underperformance detection. Used weekly by
-  the Performance Analyst and at onboarding by the Channel Auditor. Outputs
-  flag reports and data summaries for the Client Reporting Agent.
+description: Use this skill when reviewing YouTube Analytics data for a client channel. Covers CTR benchmarking, AVD interpretation, view velocity tracking, subscriber growth analysis, and underperformance detection. Used weekly by the Performance Analyst and at onboarding by the Channel Auditor. Outputs flag reports and data summaries for the Client Reporting Agent.
 tags:
   - operations
   - analytics

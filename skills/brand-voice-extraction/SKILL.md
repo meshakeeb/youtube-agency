@@ -1,12 +1,7 @@
 ---
 name: brand-voice-extraction
 slug: brand-voice-extraction
-description: >
-  Use this skill when building or refreshing a Brand Voice Profile for a client.
-  Covers tone classification, vocabulary extraction, sentence structure analysis,
-  and explicit do/don't rules. Takes the client's existing content as input.
-  Output is the Brand Voice Profile — a mandatory reference for every Production
-  agent before writing any deliverable.
+description: Use this skill when building or refreshing a Brand Voice Profile for a client. Covers tone classification, vocabulary extraction, sentence structure analysis, and explicit do/don't rules. Takes the client's existing content as input. Output is the Brand Voice Profile — a mandatory reference for every Production agent before writing any deliverable.
 tags:
   - onboarding
   - brand-voice

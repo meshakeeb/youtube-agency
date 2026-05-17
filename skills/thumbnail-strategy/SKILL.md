@@ -1,13 +1,7 @@
 ---
 name: thumbnail-strategy
 slug: thumbnail-strategy
-description: >
-  Use this skill when producing a thumbnail brief for a YouTube video. Takes
-  the full SEO package and Audience Persona Card as inputs. Covers layout
-  design, text overlay, color psychology, facial expression direction, safe
-  zone rules, and mobile optimization. CTR accounts for 25% of YouTube's
-  ranking signal — this brief must be treated as a critical production output,
-  not an afterthought.
+description: Use this skill when producing a thumbnail brief for a YouTube video. Takes the full SEO package and Audience Persona Card as inputs. Covers layout design, text overlay, color psychology, facial expression direction, safe zone rules, and mobile optimization. CTR accounts for 25% of YouTube's ranking signal — this brief must be treated as a critical production output, not an afterthought.
 tags:
   - production
   - thumbnail

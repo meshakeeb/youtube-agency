@@ -1,12 +1,7 @@
 ---
 name: company-strategy
 slug: company-strategy
-description: >
-  Use this skill when making company-level decisions — client onboarding
-  approval, quality governance, performance review against company goals,
-  and client retention decisions. Used exclusively by the CEO. Covers quarterly
-  goal reviews, client portfolio health assessment, and structural decisions
-  about teams, agents, and skills.
+description: Use this skill when making company-level decisions — client onboarding approval, quality governance, performance review against company goals, and client retention decisions. Used exclusively by the CEO. Covers quarterly goal reviews, client portfolio health assessment, and structural decisions about teams, agents, and skills.
 tags:
   - leadership
   - ceo

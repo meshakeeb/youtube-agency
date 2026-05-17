@@ -1,12 +1,7 @@
 ---
 name: seo-quality-review
 slug: seo-quality-review
-description: >
-  Use this skill when reviewing a completed Production Package before client
-  delivery. Covers SEO accuracy checks, brand voice compliance, output scoring,
-  and revision feedback writing. Every Production Package must pass this review
-  before delivery. Packages scoring below 80/100 are returned to Production
-  with specific, actionable revision notes.
+description: Use this skill when reviewing a completed Production Package before client delivery. Covers SEO accuracy checks, brand voice compliance, output scoring, and revision feedback writing. Every Production Package must pass this review before delivery. Packages scoring below 80/100 are returned to Production with specific, actionable revision notes.
 tags:
   - operations
   - quality-control

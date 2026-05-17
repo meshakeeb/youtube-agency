@@ -1,12 +1,7 @@
 ---
 name: youtube-keyword-research
 slug: youtube-keyword-research
-description: >
-  Use this skill when identifying the primary keyword and long-tail variants for
-  a specific video. Takes the video topic and Competitor Brief as inputs. Covers
-  search intent analysis, keyword opportunity scoring, and long-tail mapping.
-  Output is the Keyword Brief — first input in the Production pipeline.
-  Do not begin any production run without an approved Keyword Brief.
+description: Use this skill when identifying the primary keyword and long-tail variants for a specific video. Takes the video topic and Competitor Brief as inputs. Covers search intent analysis, keyword opportunity scoring, and long-tail mapping. Output is the Keyword Brief — first input in the Production pipeline. Do not begin any production run without an approved Keyword Brief.
 tags:
   - production
   - keywords

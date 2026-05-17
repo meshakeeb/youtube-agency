@@ -1,12 +1,7 @@
 ---
 name: youtube-description-writing
 slug: youtube-description-writing
-description: >
-  Use this skill when writing a full YouTube video description. Takes the
-  Keyword Brief, Title Set, and Brand Voice Profile as inputs. Produces a
-  200–500 word description following the agency's structured template. The
-  first 150 characters are critical — they must contain the primary keyword
-  and a viewer hook. Never keyword-stuff. Never skip the structured template.
+description: Use this skill when writing a full YouTube video description. Takes the Keyword Brief, Title Set, and Brand Voice Profile as inputs. Produces a 200–500 word description following the agency's structured template. The first 150 characters are critical — they must contain the primary keyword and a viewer hook. Never keyword-stuff. Never skip the structured template.
 tags:
   - production
   - description

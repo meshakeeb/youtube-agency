@@ -1,11 +1,7 @@
 ---
 name: youtube-tag-strategy
 slug: youtube-tag-strategy
-description: >
-  Use this skill when building the tag set and hashtag selection for a YouTube
-  video. Takes the Keyword Brief and Description Draft as inputs. Produces 8–12
-  tags within the 500-character YouTube limit and 3–5 prioritized hashtags.
-  Tags must be niche-specific and varied in scope. Never use generic viral tags.
+description: Use this skill when building the tag set and hashtag selection for a YouTube video. Takes the Keyword Brief and Description Draft as inputs. Produces 8–12 tags within the 500-character YouTube limit and 3–5 prioritized hashtags. Tags must be niche-specific and varied in scope. Never use generic viral tags.
 tags:
   - production
   - tags

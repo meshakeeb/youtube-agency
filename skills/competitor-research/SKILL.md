@@ -1,12 +1,7 @@
 ---
 name: competitor-research
 slug: competitor-research
-description: >
-  Use this skill when analyzing competing YouTube channels and videos to identify
-  gaps, weaknesses, and keyword opportunities. Covers SERP analysis, competitor
-  weakness scoring, content gap identification, and opportunity ranking. Runs
-  at client onboarding for a full gap report and per-video for a targeted
-  competitor brief.
+description: Use this skill when analyzing competing YouTube channels and videos to identify gaps, weaknesses, and keyword opportunities. Covers SERP analysis, competitor weakness scoring, content gap identification, and opportunity ranking. Runs at client onboarding for a full gap report and per-video for a targeted competitor brief.
 tags:
   - intelligence
   - competitor

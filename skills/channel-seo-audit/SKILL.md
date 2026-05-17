@@ -1,12 +1,7 @@
 ---
 name: channel-seo-audit
 slug: channel-seo-audit
-description: >
-  Use this skill when auditing a new client's YouTube channel at onboarding.
-  Covers SEO health scoring across titles, descriptions, tags, thumbnails,
-  chapters, and upload patterns. Identifies quick wins and long-term structural
-  issues. Also used for semi-annual re-audits. Output is the Channel Audit
-  Report and baseline metrics used by the Client Reporting Agent.
+description: Use this skill when auditing a new client's YouTube channel at onboarding. Covers SEO health scoring across titles, descriptions, tags, thumbnails, chapters, and upload patterns. Identifies quick wins and long-term structural issues. Also used for semi-annual re-audits. Output is the Channel Audit Report and baseline metrics used by the Client Reporting Agent.
 tags:
   - onboarding
   - audit
