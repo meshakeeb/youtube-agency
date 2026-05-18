@@ -7,22 +7,38 @@ import {
   type ReactNode,
 } from "react";
 
-export type ThemeName = "material" | "web3";
+export type ThemeName = "material" | "web3" | "saas" | "terminal";
+
+export const THEMES: ThemeName[] = ["material", "web3", "saas", "terminal"];
+
+export const THEME_LABELS: Record<ThemeName, string> = {
+  material: "Material",
+  web3: "Web3",
+  saas: "SaaS",
+  terminal: "Terminal",
+};
+
 interface ThemeCtx {
   theme: ThemeName;
   setTheme: (t: ThemeName) => void;
-  toggle: () => void;
+  cycle: () => void;
 }
 
 const Ctx = createContext<ThemeCtx | undefined>(undefined);
+
+function isTheme(v: unknown): v is ThemeName {
+  return typeof v === "string" && (THEMES as string[]).includes(v);
+}
 
 export function ThemeProvider({ children }: { children: ReactNode }) {
   const [theme, setThemeState] = useState<ThemeName>("material");
 
   useEffect(() => {
-    const stored = (typeof window !== "undefined" &&
-      (localStorage.getItem("bb-theme") as ThemeName | null)) || null;
-    const initial: ThemeName = stored === "web3" ? "web3" : "material";
+    let initial: ThemeName = "material";
+    try {
+      const stored = localStorage.getItem("bb-theme");
+      if (isTheme(stored)) initial = stored;
+    } catch {}
     setThemeState(initial);
     document.documentElement.setAttribute("data-theme", initial);
   }, []);
@@ -34,10 +50,14 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
       localStorage.setItem("bb-theme", t);
     } catch {}
   };
-  const toggle = () => setTheme(theme === "material" ? "web3" : "material");
+
+  const cycle = () => {
+    const i = THEMES.indexOf(theme);
+    setTheme(THEMES[(i + 1) % THEMES.length]);
+  };
 
   return (
-    <Ctx.Provider value={{ theme, setTheme, toggle }}>{children}</Ctx.Provider>
+    <Ctx.Provider value={{ theme, setTheme, cycle }}>{children}</Ctx.Provider>
   );
 }
 
