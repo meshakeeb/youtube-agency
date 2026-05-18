@@ -7,15 +7,27 @@ import {
   type ReactNode,
 } from "react";
 
-export type ThemeName = "material" | "web3" | "saas" | "terminal";
+export type ThemeName =
+  | "material"
+  | "web3"
+  | "coinbase"
+  | "electro"
+  | "green";
 
-export const THEMES: ThemeName[] = ["material", "web3", "saas", "terminal"];
+export const THEMES: ThemeName[] = [
+  "material",
+  "web3",
+  "coinbase",
+  "electro",
+  "green",
+];
 
 export const THEME_LABELS: Record<ThemeName, string> = {
   material: "Material",
   web3: "Web3",
-  saas: "SaaS",
-  terminal: "Terminal",
+  coinbase: "Coinbase",
+  electro: "Electro",
+  green: "Green",
 };
 
 interface ThemeCtx {
