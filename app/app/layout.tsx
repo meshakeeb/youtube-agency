@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
-import { Roboto, Inter, Space_Grotesk, JetBrains_Mono } from "next/font/google";
+import { Roboto, Inter, Space_Grotesk, JetBrains_Mono, Calistoga } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "./components/theme/ThemeProvider";
 import { Sidebar } from "./components/layout/Sidebar";
 import { Topbar } from "./components/layout/Topbar";
 import { MaterialBackground } from "./components/layout/MaterialBackground";
 import { Web3Background } from "./components/layout/Web3Background";
+import { SaasBackground } from "./components/layout/SaasBackground";
+import { TerminalBackground } from "./components/layout/TerminalBackground";
 
 const roboto = Roboto({
   weight: ["400", "500", "700"],
@@ -24,6 +26,12 @@ const jbMono = JetBrains_Mono({
   display: "swap",
   variable: "--font-jetbrains-mono",
 });
+const calistoga = Calistoga({
+  weight: ["400"],
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-calistoga",
+});
 
 export const metadata: Metadata = {
   title: "Blackbird Agency — Multi-Agent YouTube SEO Platform",
@@ -33,9 +41,10 @@ export const metadata: Metadata = {
 
 const themeBootstrap = `
 (function(){
+  var allowed = { material:1, web3:1, saas:1, terminal:1 };
   try {
     var t = localStorage.getItem('bb-theme');
-    if (t !== 'web3') t = 'material';
+    if (!allowed[t]) t = 'material';
     document.documentElement.setAttribute('data-theme', t);
   } catch (e) {
     document.documentElement.setAttribute('data-theme','material');
@@ -51,7 +60,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${roboto.variable} ${inter.variable} ${spaceGrotesk.variable} ${jbMono.variable}`}
+      className={`${roboto.variable} ${inter.variable} ${spaceGrotesk.variable} ${jbMono.variable} ${calistoga.variable}`}
     >
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeBootstrap }} />
@@ -61,6 +70,8 @@ export default function RootLayout({
           <div className="relative min-h-screen">
             <MaterialBackground />
             <Web3Background />
+            <SaasBackground />
+            <TerminalBackground />
             <div className="relative z-10 flex min-h-screen">
               <Sidebar />
               <div className="flex-1 flex flex-col min-w-0">
