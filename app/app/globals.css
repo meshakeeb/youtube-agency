@@ -41,43 +41,63 @@
   --font-mono: var(--font-jetbrains-mono), ui-monospace;
 }
 
-/* ─── SAAS: Minimalist Modern (Electric Blue) ─────────────────────────── */
-[data-theme="saas"] {
-  --bg: 250 250 250;           /* #FAFAFA warm off-white */
-  --surface: 255 255 255;      /* pure white cards */
-  --surface-low: 241 245 249;  /* slate-100 */
-  --fg: 15 23 42;              /* slate-900 */
-  --primary: 0 82 255;         /* #0052FF Electric Blue */
-  --secondary: 77 124 255;     /* #4D7CFF gradient end */
-  --tertiary: 15 23 42;        /* slate-900 (inverted-section accent) */
-  --border: 226 232 240;       /* slate-200 */
-  --muted: 100 116 139;        /* slate-500 */
-  --success: 16 185 129;
-  --warning: 234 179 8;
-  --error: 220 38 38;
-  --radius-card: 20px;
+/* ─── COINBASE: Editorial Institutional (Coinbase Blue) ───────────────── */
+[data-theme="coinbase"] {
+  --bg: 255 255 255;           /* #ffffff canvas */
+  --surface: 255 255 255;      /* cards: white w/ hairline */
+  --surface-low: 247 247 247;  /* #f7f7f7 alternating bands */
+  --fg: 10 11 13;              /* #0a0b0d ink */
+  --primary: 0 82 255;         /* #0052ff Coinbase Blue */
+  --secondary: 244 176 0;      /* #f4b000 yellow asset accent */
+  --tertiary: 10 11 13;        /* dark surfaces / hero contrast */
+  --border: 222 225 230;       /* #dee1e6 hairline */
+  --muted: 91 97 110;          /* #5b616e body-gray */
+  --success: 5 177 105;        /* #05b169 semantic-up */
+  --warning: 244 176 0;
+  --error: 207 32 47;          /* #cf202f semantic-down */
+  --radius-card: 24px;
   --font-sans: var(--font-inter), system-ui;
-  --font-heading: var(--font-calistoga), Georgia, serif;
+  --font-heading: var(--font-inter), system-ui;
   --font-mono: var(--font-jetbrains-mono), ui-monospace;
 }
 
-/* ─── TERMINAL: Phosphor CLI ──────────────────────────────────────────── */
-[data-theme="terminal"] {
-  --bg: 10 10 10;              /* #0a0a0a deep black */
-  --surface: 10 10 10;         /* same — cards = bordered panes */
-  --surface-low: 18 18 18;
-  --fg: 51 255 0;              /* #33ff00 phosphor green */
-  --primary: 51 255 0;
-  --secondary: 255 176 0;      /* #ffb000 amber */
-  --tertiary: 255 176 0;
-  --border: 31 82 31;          /* #1f521f dimmed green */
-  --muted: 31 82 31;
-  --success: 51 255 0;
-  --warning: 255 176 0;
-  --error: 255 51 51;          /* #ff3333 */
-  --radius-card: 0px;
-  --font-sans: var(--font-jetbrains-mono), ui-monospace;
-  --font-heading: var(--font-jetbrains-mono), ui-monospace;
+/* ─── ELECTRO: WattVision Neon-Cyan Dashboard ─────────────────────────── */
+[data-theme="electro"] {
+  --bg: 18 18 18;              /* #121212 */
+  --surface: 30 30 30;         /* #1E1E1E card */
+  --surface-low: 37 37 37;     /* #252525 hover row */
+  --fg: 255 255 255;
+  --primary: 0 229 255;        /* #00E5FF cyan/neon */
+  --secondary: 50 215 75;      /* #32D74B lime "live" */
+  --tertiary: 48 209 88;       /* #30D158 area gradient */
+  --border: 44 44 46;          /* #2C2C2E grid + dividers */
+  --muted: 152 152 157;        /* #98989D */
+  --success: 50 215 75;
+  --warning: 255 200 0;
+  --error: 255 69 58;           /* #FF453A alert red */
+  --radius-card: 16px;
+  --font-sans: var(--font-inter), system-ui;
+  --font-heading: var(--font-inter), system-ui;
+  --font-mono: var(--font-jetbrains-mono), ui-monospace;
+}
+
+/* ─── GREEN: Green Deck (Spotify-style audio venue) ───────────────────── */
+[data-theme="green"] {
+  --bg: 18 18 18;              /* #121212 void black */
+  --surface: 24 24 24;         /* #181818 card */
+  --surface-low: 40 40 40;     /* #282828 elevated/hover */
+  --fg: 255 255 255;
+  --primary: 29 185 84;        /* #1DB954 Spotify green */
+  --secondary: 83 83 83;       /* #535353 muted gray controls */
+  --tertiary: 30 215 96;       /* #1ED760 hover */
+  --border: 40 40 40;          /* #282828 */
+  --muted: 167 167 167;        /* #A7A7A7 secondary text */
+  --success: 29 185 84;
+  --warning: 245 155 35;        /* #F59B23 */
+  --error: 226 33 52;            /* #E22134 */
+  --radius-card: 8px;
+  --font-sans: var(--font-dm-sans), system-ui;
+  --font-heading: var(--font-dm-sans), system-ui;
   --font-mono: var(--font-jetbrains-mono), ui-monospace;
 }
 
@@ -141,71 +161,75 @@ html, body {
   transform: translateY(-2px);
 }
 
-/* ─── SAAS-only background: subtle dot grid + accent glow ─────────────── */
-[data-theme="saas"] .bg-dotgrid {
-  background-image: radial-gradient(rgba(15,23,42,0.08) 1px, transparent 1px);
-  background-size: 22px 22px;
+/* ─── COINBASE-only background: subtle alternating soft band tint ─────── */
+[data-theme="coinbase"] .bg-soft-band {
+  background: rgb(var(--surface-low));
 }
-[data-theme="saas"] .bg-glow-blue {
-  background: radial-gradient(closest-side, rgba(0,82,255,0.18), transparent 70%);
+[data-theme="coinbase"] .bg-glow-blue {
+  background: radial-gradient(closest-side, rgba(0,82,255,0.08), transparent 70%);
   filter: blur(80px);
 }
-[data-theme="saas"] .bg-glow-sky {
-  background: radial-gradient(closest-side, rgba(77,124,255,0.14), transparent 70%);
+
+/* ─── ELECTRO-only background: dim grid + cyan glow ───────────────────── */
+[data-theme="electro"] .bg-grid-dim {
+  background-image:
+    linear-gradient(rgba(44,44,46,0.6) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(44,44,46,0.6) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: radial-gradient(ellipse at center, black 30%, transparent 85%);
+}
+[data-theme="electro"] .bg-glow-cyan {
+  background: radial-gradient(closest-side, rgba(0,229,255,0.18), transparent 70%);
+  filter: blur(80px);
+}
+[data-theme="electro"] .bg-glow-lime {
+  background: radial-gradient(closest-side, rgba(50,215,75,0.10), transparent 70%);
+  filter: blur(90px);
+}
+
+/* ─── GREEN-only background: subtle radial spotlight ──────────────────── */
+[data-theme="green"] .bg-spotlight {
+  background: radial-gradient(closest-side, rgba(29,185,84,0.10), transparent 70%);
   filter: blur(100px);
 }
 
-/* ─── TERMINAL-only background: scanlines + faint vignette ────────────── */
-[data-theme="terminal"] .bg-scanlines {
-  background-image: repeating-linear-gradient(
-    to bottom,
-    rgba(51,255,0,0.04) 0px,
-    rgba(51,255,0,0.04) 1px,
-    transparent 1px,
-    transparent 3px
-  );
-  pointer-events: none;
-}
-[data-theme="terminal"] .bg-crt-vignette {
-  background: radial-gradient(ellipse at center, transparent 55%, rgba(0,0,0,0.55) 100%);
-  pointer-events: none;
-}
-
-/* SAAS card treatment: pure-white elevated, slate-200 hairline, blue-tinted shadow */
-[data-theme="saas"] .themed-card {
+/* COINBASE card: white canvas, 1px hairline, ultra-soft drop on hover */
+[data-theme="coinbase"] .themed-card {
   background: rgb(var(--surface));
   border-radius: var(--radius-card);
   border: 1px solid rgb(var(--border));
-  box-shadow:
-    0 1px 2px rgba(15,23,42,0.04),
-    0 8px 24px -8px rgba(0,82,255,0.10);
-  transition: transform 280ms cubic-bezier(0.2, 0, 0, 1), box-shadow 280ms cubic-bezier(0.2, 0, 0, 1);
+  box-shadow: none;
+  transition: transform 220ms ease, box-shadow 220ms ease;
 }
-[data-theme="saas"] .themed-card:hover {
-  box-shadow:
-    0 2px 4px rgba(15,23,42,0.06),
-    0 16px 36px -8px rgba(0,82,255,0.18);
-  transform: translateY(-3px);
+[data-theme="coinbase"] .themed-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+  transform: translateY(-2px);
 }
 
-/* TERMINAL card treatment: zero radius, 1px green border, phosphor text-shadow */
-[data-theme="terminal"] .themed-card {
+/* ELECTRO card: dark with 1px grid-color border, no glow at rest */
+[data-theme="electro"] .themed-card {
   background: rgb(var(--surface));
-  border-radius: 0;
+  border-radius: var(--radius-card);
   border: 1px solid rgb(var(--border));
   box-shadow: none;
-  transition: border-color 120ms ease;
+  transition: border-color 200ms ease, box-shadow 200ms ease;
 }
-[data-theme="terminal"] .themed-card:hover {
-  border-color: rgb(var(--primary));
+[data-theme="electro"] .themed-card:hover {
+  border-color: rgba(0, 229, 255, 0.55);
+  box-shadow: 0 0 24px -8px rgba(0, 229, 255, 0.35);
 }
-[data-theme="terminal"] .themed-card,
-[data-theme="terminal"] body,
-[data-theme="terminal"] main {
-  text-shadow: 0 0 5px rgba(51, 255, 0, 0.35);
+
+/* GREEN card: elevation through surface lightening (no shadow) */
+[data-theme="green"] .themed-card {
+  background: rgb(var(--surface));
+  border-radius: var(--radius-card);
+  border: none;
+  box-shadow: none;
+  transition: background 200ms ease, transform 200ms ease;
 }
-[data-theme="terminal"] * {
-  letter-spacing: 0.01em;
+[data-theme="green"] .themed-card:hover {
+  background: rgb(var(--surface-low));
+  transform: translateY(-1px);
 }
 
 /* Gradient text utilities */
@@ -227,8 +251,14 @@ html, body {
   background-clip: text;
   color: transparent;
 }
-.text-gradient-phosphor {
-  background: linear-gradient(90deg, #33ff00 0%, #ffb000 100%);
+.text-gradient-cyan {
+  background: linear-gradient(90deg, #00E5FF 0%, #32D74B 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.text-gradient-green {
+  background: linear-gradient(90deg, #1DB954 0%, #1ED760 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -269,30 +299,23 @@ pre.code-block {
   border-color: rgba(255,255,255,0.08);
   color: #e2e8f0;
 }
-[data-theme="saas"] pre.code-block {
+[data-theme="coinbase"] pre.code-block {
+  background: rgb(var(--surface-low));
+  border-color: rgb(var(--border));
+  color: rgb(var(--fg));
+  border-radius: 12px;
+}
+[data-theme="electro"] pre.code-block {
+  background: rgba(0,0,0,0.45);
+  border-color: rgb(var(--border));
+  color: #e2e8f0;
+  border-radius: 12px;
+}
+[data-theme="green"] pre.code-block {
   background: rgb(var(--surface-low));
   border-color: rgb(var(--border));
   color: rgb(var(--fg));
   border-radius: 8px;
-}
-[data-theme="terminal"] pre.code-block {
-  background: rgb(var(--surface));
-  border-color: rgb(var(--border));
-  color: rgb(var(--primary));
-  border-radius: 0;
-  text-shadow: 0 0 4px rgba(51,255,0,0.4);
-}
-
-/* Terminal blinking cursor */
-@keyframes term-blink {
-  0%, 49%   { opacity: 1; }
-  50%, 100% { opacity: 0; }
-}
-[data-theme="terminal"] .term-cursor::after {
-  content: "█";
-  margin-left: 2px;
-  animation: term-blink 1s steps(1, end) infinite;
-  color: rgb(var(--primary));
 }
 
 /* Tremor table tweak */
@@ -302,9 +325,9 @@ pre.code-block {
 ::-webkit-scrollbar { width: 10px; height: 10px; }
 ::-webkit-scrollbar-thumb { background: rgb(var(--border) / 0.4); border-radius: 8px; }
 [data-theme="web3"] ::-webkit-scrollbar-thumb { background: rgba(247,147,26,0.30); }
-[data-theme="saas"] ::-webkit-scrollbar-thumb { background: rgba(0,82,255,0.30); }
-[data-theme="terminal"] ::-webkit-scrollbar-thumb { background: rgba(51,255,0,0.35); border-radius: 0; }
-[data-theme="terminal"] ::-webkit-scrollbar { background: rgb(var(--surface)); }
+[data-theme="coinbase"] ::-webkit-scrollbar-thumb { background: rgba(0,82,255,0.25); }
+[data-theme="electro"] ::-webkit-scrollbar-thumb { background: rgba(0,229,255,0.35); }
+[data-theme="green"] ::-webkit-scrollbar-thumb { background: rgba(29,185,84,0.35); }
 
 /* No-flash fallback */
 html.no-theme { visibility: hidden; }
